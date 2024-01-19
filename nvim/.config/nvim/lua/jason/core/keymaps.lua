@@ -16,6 +16,7 @@ keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 -- keymap.set("n", "x", '"_x')
 
 keymap.set("n", "<leader>w", ":w<CR>", { desc = "Quick save" })
+keymap.set("n", "<leader>fb", ":Telescope file_browser<CR>", { noremap = true, desc = "File browser" })
 
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
