@@ -14,9 +14,6 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup(
   { { import = "jason.plugins" }, { import = "jason.plugins.lsp" }, { import = "jason.plugins.colorschemes" } },
   {
-    -- install = {
-    --   colorscheme = { "sonokai" },
-    -- },
     checker = {
       enabled = true,
       notify = false,

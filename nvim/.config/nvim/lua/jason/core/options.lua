@@ -49,3 +49,13 @@ vim.opt.inccommand = "split" -- show live preview of substitution
 
 -- case sensitivity
 vim.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
+
+-- Highlight yanked text
+vim.api.nvim_create_autocmd("TextYankPost", {
+  group = vim.api.nvim_create_augroup("highlight_yank", {}),
+  desc = "Highlight selection on yank",
+  pattern = "*",
+  callback = function()
+    vim.highlight.on_yank({ higroup = "IncSearch", timeout = 500 })
+  end,
+})
