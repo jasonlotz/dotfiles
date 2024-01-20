@@ -45,12 +45,12 @@ opt.swapfile = false
 opt.virtualedit = "block" -- allow cursor to move anywhere in visual block mode
 
 -- substitute
-vim.opt.inccommand = "split" -- show live preview of substitution
+opt.inccommand = "split" -- show live preview of substitution
 
 -- case sensitivity
 vim.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
 
--- Highlight yanked text
+-- highlight yanked text
 vim.api.nvim_create_autocmd("TextYankPost", {
   group = vim.api.nvim_create_augroup("highlight_yank", {}),
   desc = "Highlight selection on yank",
