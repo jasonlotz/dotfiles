@@ -40,3 +40,12 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+-- virtual edit
+opt.virtualedit = "block" -- allow cursor to move anywhere in visual block mode
+
+-- substitute
+vim.opt.inccommand = "split" -- show live preview of substitution
+
+-- case sensitivity
+vim.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
