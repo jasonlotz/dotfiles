@@ -14,7 +14,7 @@ keymap.set("v", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
 -- delete single character without copying into register
--- keymap.set("n", "x", '"_x')
+keymap.set("n", "x", '"_x')
 
 keymap.set("n", "<leader>w", ":w<CR>", { desc = "Quick save" })
 keymap.set("n", "<leader>wa", ":wa<CR>", { desc = "Quick save all" })
