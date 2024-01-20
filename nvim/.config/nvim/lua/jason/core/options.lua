@@ -19,6 +19,7 @@ opt.smartcase = true -- if you include mixed case in your search, assumes you wa
 
 -- cursor line
 opt.cursorline = true -- highlight the current cursor line
+opt.scrolloff = 10 -- keep 10 lines above and below cursor
 
 -- appearance
 
@@ -46,9 +47,6 @@ opt.virtualedit = "block" -- allow cursor to move anywhere in visual block mode
 
 -- substitute
 opt.inccommand = "split" -- show live preview of substitution
-
--- case sensitivity
-vim.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
 
 -- highlight yanked text
 vim.api.nvim_create_autocmd("TextYankPost", {
