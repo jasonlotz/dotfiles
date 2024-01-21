@@ -11,18 +11,19 @@ return {
     local actions = require("telescope.actions")
 
     telescope.setup({
-      defaults = {
-        pickers = {
-          find_files = {
-            hidden = true,
-          },
-          oldfiles = {
-            hidden = true,
-          },
-          live_grep = {
-            hidden = true,
-          },
+      pickers = {
+        live_grep = {
+          file_ignore_patterns = { "node_modules", ".git", ".venv" },
+          additional_args = function(_)
+            return { "--hidden" }
+          end,
         },
+        find_files = {
+          file_ignore_patterns = { "node_modules", ".git", ".venv" },
+          hidden = true,
+        },
+      },
+      defaults = {
         path_display = { "truncate " },
         mappings = {
           i = {
