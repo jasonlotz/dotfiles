@@ -9,9 +9,9 @@
   "cmp-nvim-lsp": { "branch": "main", "commit": "5af77f54de1b16c34b23cba810150689a3a90312" },
   "cmp-path": { "branch": "main", "commit": "91ff86cd9c29299a64f968ebb45846c485725f23" },
   "cmp_luasnip": { "branch": "master", "commit": "05a9ab28b53f71d1aece421ef32fee2cb857a843" },
-  "conform.nvim": { "branch": "master", "commit": "9a785eb8f0199ac47ce8bb9e9b6103de5ad8e3a7" },
+  "conform.nvim": { "branch": "master", "commit": "3d59cbd01a4b74124c5a6fb23b8cc63e5c2db3d5" },
   "copilot.vim": { "branch": "release", "commit": "49e0348bfb913fae63ca5ddb987a8bccd193da86" },
-  "dressing.nvim": { "branch": "master", "commit": "7237cdf25ea9150951f3c7ecbd4537cad7b32a9f" },
+  "dressing.nvim": { "branch": "master", "commit": "42d767b04c50a6966c9633e3968bc65c0c2f2bfc" },
   "everforest": { "branch": "master", "commit": "72f101bd63228a1a45012325e39c5280ec22c828" },
   "flash.nvim": { "branch": "main", "commit": "48817af25f51c0590653bbc290866e4890fe1cbe" },
   "friendly-snippets": { "branch": "main", "commit": "69a2c1675b66e002799f5eef803b87a12f593049" },
@@ -47,8 +47,9 @@
   "transparent.nvim": { "branch": "main", "commit": "fd35a46f4b7c1b244249266bdcb2da3814f01724" },
   "trouble.nvim": { "branch": "main", "commit": "f1168feada93c0154ede4d1fe9183bf69bac54ea" },
   "vim-ReplaceWithRegister": { "branch": "master", "commit": "aad1e8fa31cb4722f20fe40679caa56e25120032" },
+  "vim-fugitive": { "branch": "master", "commit": "854a8df0d06b8d3fcb30fa7f2b08c62b553eee3b" },
   "vim-maximizer": { "branch": "master", "commit": "2e54952fe91e140a2e69f35f22131219fcd9c5f1" },
-  "vim-nightfly-guicolors": { "branch": "master", "commit": "0c6e2e88bf15634af94a91fcc2e20e28a09dfecd" },
+  "vim-nightfly-guicolors": { "branch": "master", "commit": "fd446e4ab8695bd2bdb52f7f3bfc1b096f7b2c87" },
   "vim-tmux-navigator": { "branch": "master", "commit": "38b1d0402c4600543281dc85b3f51884205674b6" },
   "which-key.nvim": { "branch": "main", "commit": "4433e5ec9a507e5097571ed55c02ea9658fb268a" }
 }
