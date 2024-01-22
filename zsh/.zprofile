@@ -1,6 +1,5 @@
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home
 export JAVA_HOME=`/usr/libexec/java_home`
 
 # Git
@@ -18,6 +17,10 @@ export tc=/Users/jason/Apps/apache-tomcat-8.5.72
 # Scripts
 PATH="$PATH:/Users/jason/Dropbox/Scripts/"
 
+# Obsidian
+export ovault="/Users/jason/Library/Mobile Documents/iCloud~md~obsidian/Documents/obsidian-vault"
+
+# Node Version Manager
 export NVM_DIR="$HOME/.nvm"
 # Load Node Version Manager
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
