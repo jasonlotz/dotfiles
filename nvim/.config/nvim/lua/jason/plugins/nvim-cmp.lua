@@ -51,6 +51,12 @@ return {
           ellipsis_char = "...",
         }),
       },
+      window = {
+        documentation = cmp.config.window.bordered(),
+        completion = cmp.config.window.bordered({
+          winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None",
+        }),
+      },
     })
   end,
 }
