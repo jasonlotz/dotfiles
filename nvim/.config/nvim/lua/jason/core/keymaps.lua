@@ -14,7 +14,7 @@ keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 keymap.set("n", "x", '"_x')
 
 keymap.set("n", "<leader>w", ":w<CR>", { desc = "Quick save" })
-keymap.set("n", "<leader>wa", ":wa<CR>", { desc = "Quick save all" })
+keymap.set("n", "<leader>ww", ":wa<CR>", { desc = "Quick save all" })
 keymap.set("n", "<leader>fb", ":Telescope file_browser<CR>", { noremap = true, desc = "File browser" })
 
 -- increment/decrement numbers
