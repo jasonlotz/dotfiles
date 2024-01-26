@@ -34,3 +34,16 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 keymap.set("n", "<leader>q", "<cmd>q<CR>", { noremap = true, silent = true, desc = "Close current buffer" }) -- close current buffer
+
+-- move lines
+keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move line down" })
+keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line up" })
+
+-- keep cursor center on half-page up/down and search
+keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Move cursor half-page up" })
+keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Move cursor half-page down" })
+keymap.set("n", "n", "nzzzv", { desc = "Move cursor to next search result" })
+keymap.set("n", "N", "Nzzzv", { desc = "Move cursor to previous search result" })
+
+-- magic replace term under cursor
+keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
