@@ -46,4 +46,9 @@ keymap.set("n", "n", "nzzzv", { desc = "Move cursor to next search result" })
 keymap.set("n", "N", "Nzzzv", { desc = "Move cursor to previous search result" })
 
 -- magic replace term under cursor
-keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+keymap.set(
+  "n",
+  "<leader>R",
+  [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+  { desc = "Replace word under cursor" }
+)
