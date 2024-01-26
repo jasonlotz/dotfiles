@@ -26,7 +26,7 @@ return {
       },
     })
 
-    -- not sure why, markdown doesn't seem to respect the settings in options.lua, so resetting there here
+    -- not sure why, markdown doesn't seem to respect the settings in options.lua, so resetting them here
     vim.api.nvim_create_autocmd("FileType", {
       pattern = "markdown",
       callback = function()
