@@ -119,7 +119,7 @@ return {
       on_attach = on_attach,
     })
 
-    -- configure python server
+    -- configure jdtls (java) server
     lspconfig["jdtls"].setup({
       capabilities = capabilities,
       on_attach = on_attach,

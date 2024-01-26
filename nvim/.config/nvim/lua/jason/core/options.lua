@@ -48,6 +48,9 @@ opt.virtualedit = "block" -- allow cursor to move anywhere in visual block mode
 -- substitute
 opt.inccommand = "split" -- show live preview of substitution
 
+-- faster completion
+opt.updatetime = 50
+
 -- highlight yanked text
 vim.api.nvim_create_autocmd("TextYankPost", {
   group = vim.api.nvim_create_augroup("highlight_yank", {}),
