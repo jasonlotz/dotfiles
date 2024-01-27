@@ -50,8 +50,8 @@ return {
         "prettier", -- prettier formatter
         "stylua", -- lua formatter
         "isort", -- python formatter
-        "black", -- python formatter
-        "pylint", -- python linter
+        "autopep8", -- python formatter
+        "flake8", -- python linter
         "eslint_d", -- js linter
         "luacheck", -- lua linter
       },
