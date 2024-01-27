@@ -13,9 +13,9 @@ keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
 
+-- quick save
 keymap.set("n", "<leader>w", ":w<CR>", { desc = "Quick save" })
 keymap.set("n", "<leader>ww", ":wa<CR>", { desc = "Quick save all" })
-keymap.set("n", "<leader>fb", ":Telescope file_browser<CR>", { noremap = true, desc = "File browser" })
 
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
@@ -27,6 +27,7 @@ keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) 
 keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- make split windows equal width & height
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
 
+-- tab management
 keymap.set("n", "<leader>tt", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- open new tab
 keymap.set("n", "<leader>to", "<cmd>tabonly<CR>", { desc = "Close all but current tab" })
 keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" }) -- close current tab

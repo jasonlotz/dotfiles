@@ -26,17 +26,6 @@ return {
       },
     })
 
-    -- not sure why, markdown doesn't seem to respect the settings in options.lua, so resetting them here
-    vim.api.nvim_create_autocmd("FileType", {
-      pattern = "markdown",
-      callback = function()
-        vim.opt.tabstop = 2 -- 2 spaces for tabs (prettier default)
-        vim.opt.shiftwidth = 2 -- 2 spaces for indent width
-        vim.opt.expandtab = true -- expand tab to spaces
-        vim.opt.autoindent = true -- copy indent from current line when starting new one
-      end,
-    })
-
     vim.keymap.set({ "n", "v" }, "<leader>mp", function()
       conform.format({
         lsp_fallback = true,

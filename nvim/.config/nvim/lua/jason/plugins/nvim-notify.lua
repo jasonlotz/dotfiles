@@ -1,7 +1,7 @@
 return {
   "rcarriga/nvim-notify",
   event = "BufRead",
-  config = {
+  opts = {
     -- Animation style
     stages = "fade_in_slide_out",
 
