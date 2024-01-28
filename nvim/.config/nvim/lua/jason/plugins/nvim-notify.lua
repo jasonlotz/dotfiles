@@ -13,12 +13,12 @@ return {
 
     -- Max height
     max_height = function()
-      return math.floor(vim.o.lines * 0.75)
+      return math.floor(vim.o.lines * 0.50)
     end,
 
     -- Max width
     max_width = function()
-      return math.floor(vim.o.columns * 0.75)
+      return math.floor(vim.o.columns * 0.50)
     end,
 
     -- Default layout config
