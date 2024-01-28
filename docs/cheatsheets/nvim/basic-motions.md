@@ -16,7 +16,8 @@
 - `0`: Start of line
 - `^`: First character of line
 - {count} + `$`: End of line
-- `(`, `)`: Next sentence (forward, backward)
+- `(`, `)`: Next sentence (backward, forward)
+- `{`, `}`: Next blank line (backward, forward)
 
 ## Multi-line / page
 
