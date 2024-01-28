@@ -67,5 +67,8 @@ return {
         },
       },
     })
+
+    vim.cmd([[ autocmd RecordingEnter * set cmdheight=1 ]])
+    vim.cmd([[ autocmd RecordingLeave * set cmdheight=0 ]])
   end,
 }
