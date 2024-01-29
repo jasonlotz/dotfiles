@@ -23,13 +23,13 @@ return {
       },
     },
     daily_notes = {
-      folder = "0-daily-notes",
+      folder = "@daily-notes",
       date_format = "%Y-%m-%d",
       alias_format = nil,
-      template = nil,
+      template = "daily-note-template.md",
     },
     templates = {
-      subdir = "templates",
+      subdir = "$templates",
       date_format = "%Y-%m-%d",
       time_format = "%H:%M",
     },
