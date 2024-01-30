@@ -20,18 +20,5 @@ PATH="$PATH:/Users/jason/Dropbox/Scripts/"
 # Obsidian
 export ovault="/Users/jason/Library/Mobile Documents/iCloud~md~obsidian/Documents/obsidian-vault"
 
-# Node Version Manager
-export NVM_DIR="$HOME/.nvm"
-# Load Node Version Manager
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
-# Node Version Manager autocomplete
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
- 
-# NOTE - Add this to /etc/profile
-# Enable nvm if available
-#if [ -f ~/.nvm/nvm.sh ]; then
-#  source ~/.nvm/nvm.sh
-#fi
-
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
