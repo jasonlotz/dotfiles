@@ -77,23 +77,11 @@ return {
         }
       end
     end,
+    --stylua: ignore
     keys = {
-      {
-        "<leader>dO",
-        function()
-          require("dap").step_out()
-        end,
-        desc = "Step Out",
-      },
-      {
-        "<leader>do",
-        function()
-          require("dap").step_over()
-        end,
-        desc = "Step Over",
-      },
-      {
-        "<leader>da",
+      { "<leader>dO", function() require("dap").step_out() end, desc = "Step Out", },
+      { "<leader>do", function() require("dap").step_over() end, desc = "Step Over", },
+      { "<leader>da",
         function()
           if vim.fn.filereadable(".vscode/launch.json") then
             local dap_vscode = require("dap.ext.vscode")
@@ -195,6 +183,17 @@ return {
             },
             windows = { indent = 1 },
           })
+        end,
+        --stylua: ignore
+        keys = {
+          { "<leader>du", function() require("dapui").toggle() end, desc = "Step Out", },
+        },
+      },
+      {
+        "leoluz/nvim-dap-go",
+        ft = "go",
+        config = function(_, opts)
+          require("dap-go").setup(opts)
         end,
       },
       --   {
