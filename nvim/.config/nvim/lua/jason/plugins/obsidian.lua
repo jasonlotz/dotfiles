@@ -41,7 +41,7 @@ return {
   -- stylua: ignore
   keys = {
     {"<leader>ot", "<cmd>ObsidianToday<cr>", desc = "Obsidian today note"},
-    {"<leader>oy", "<cmd>ObsidianYesterday<cr>", desc = "Obsidian today note"},
+    {"<leader>oy", "<cmd>ObsidianYesterday<cr>", desc = "Obsidian yesterday note"},
     {"<leader>ob", "<cmd>ObsidianBacklinks<cr>", desc = "Obsidian backlinks"}
   },
 }
