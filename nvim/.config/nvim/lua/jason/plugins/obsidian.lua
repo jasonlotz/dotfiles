@@ -38,4 +38,10 @@ return {
       vim.fn.jobstart({ "open", url }) -- Mac OS
     end,
   },
+  -- stylua: ignore
+  keys = {
+    {"<leader>ot", "<cmd>ObsidianToday<cr>", desc = "Obsidian today note"},
+    {"<leader>oy", "<cmd>ObsidianYesterday<cr>", desc = "Obsidian today note"},
+    {"<leader>ob", "<cmd>ObsidianBacklinks<cr>", desc = "Obsidian backlinks"}
+  },
 }
