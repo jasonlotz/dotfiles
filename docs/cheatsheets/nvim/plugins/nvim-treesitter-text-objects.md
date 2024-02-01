@@ -58,3 +58,10 @@
 - `]C`: Prev class end
 - `]I`: Prev conditional end
 - `]L`: Prev loop end
+
+## Repeats
+
+- `;`: Repeat move in the same direction you were moving
+- `,`: Repeat move in the opposite direction you were moving
+
+Note: Works for built-in `f`, `F`, `t`, `T` commands as well
