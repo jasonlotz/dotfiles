@@ -14,6 +14,9 @@ export PATH="/Users/jason/Workspaces/manchester/bin/:$PATH"
 export CATALINA_HOME=/Users/jason/Apps/apache-tomcat-8.5.72
 export tc=/Users/jason/Apps/apache-tomcat-8.5.72
 
+# tmux
+alias tm="tmux attach || tmux new"
+
 # Scripts
 PATH="$PATH:/Users/jason/Dropbox/Scripts/"
 
