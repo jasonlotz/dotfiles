@@ -8,7 +8,7 @@
 - `gi`: Show LSP implementations
 - `gt`: Show LSP type definitions
 - `<leader>ca`: See available code actions
-- `gh`: Show documentation for what is under cursor
+- `gh`: Show documentation for what is under cursor (press twice to enable scrolling)
 - `<leader>rn`: Smart rename
 
 ## Diagnostics
