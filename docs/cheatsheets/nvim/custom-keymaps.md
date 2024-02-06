@@ -12,19 +12,18 @@
 
 ## Increment/decrement numbers
 
-- `<leader>fb`: Increment number
 - `<leader>+`: Increment number
+- `<leader>-`: Decrement number
 
 ## Window management
 
-- `<leader>-`: Decrement number
 - `<leader>sv`: Split window vertically
 - `<leader>sh`: Split window horizontally
 - `<leader>se`: Make splits equal size
+- `<leader>sx`: Close current split
 
 ## Tab management
 
-- `<leader>sx`: Close current split
 - `<leader>tt`: Open new tab
 - `<leader>to`: Close all but current tab
 - `<leader>tx`: Close current tab
