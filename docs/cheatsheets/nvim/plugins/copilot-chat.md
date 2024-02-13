@@ -7,4 +7,4 @@
 
 ## Links
 
-https://github.com/gptlang/CopilotChat.nvim
+https://github.com/CopilotC-Nvim/CopilotChat.nvim
