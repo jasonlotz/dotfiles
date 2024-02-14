@@ -7,7 +7,7 @@
 ## Manage marks
 
 - `<leader>a`: Add mark to current file
-- `<leader>x`: Remove mark from current file
+- `<leader>A`: Remove mark from current file
 
 ## Navigate to marks
 

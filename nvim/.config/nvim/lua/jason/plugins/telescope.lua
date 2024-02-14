@@ -44,6 +44,5 @@ return {
     { "<leader>fs", "<cmd>Telescope live_grep<CR>", desc = "Find string in cwd" },
     { "<leader>fc", "<cmd>Telescope grep_string<CR>", desc = "Find string under cursor in cwd" },
     { "<leader>fo", "<cmd>Telescope buffers<CR>", desc = "Fuzzy find buffers" },
-    { "<leader>fh", "<cmd>Telescope harpoon marks<CR>", desc = "Fuzzy find harpoon marks" },
   },
 }
