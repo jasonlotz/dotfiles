@@ -37,27 +37,32 @@
 ## Navigate nodes
 
 - `[f`: Next function call start
+- `[F`: Prev function call start
+- `]f`: Next function call end
+- `]F`: Prev function call end
+
 - `[m`: Next method/function def start
+- `[M`: Prev method/function def start
+- `]m`: Next method/function def end
+- `]M`: Prev method/function def end
+
 - `[c`: Next class start
+- `[C`: Prev class start
+- `]c`: Next class end
+- `]C`: Prev class end
+
 - `[i`: Next conditional start
+- `[I`: Prev conditional start
+- `]i`: Next conditional end
+- `]I`: Prev conditional end
+
 - `[l`: Next loop start
+- `[L`: Prev loop start
+- `]l`: Next loop end
+- `]L`: Prev loop end
+
 - `[s`: Next scope
 - `[z`: Next fold
-- `]f`: Next function call end
-- `]m`: Next method/function def end
-- `]c`: Next class end
-- `]i`: Next conditional end
-- `]l`: Next loop end
-- `[F`: Prev function call start
-- `[M`: Prev method/function def start
-- `[C`: Prev class start
-- `[I`: Prev conditional start
-- `[L`: Prev loop start
-- `]F`: Prev function call end
-- `]M`: Prev method/function def end
-- `]C`: Prev class end
-- `]I`: Prev conditional end
-- `]L`: Prev loop end
 
 ## Repeats
 
