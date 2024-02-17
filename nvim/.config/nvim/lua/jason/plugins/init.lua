@@ -6,7 +6,5 @@ return {
 
   "inkarkat/vim-ReplaceWithRegister", -- replace with register contents using motion (gr + motion)}
 
-  "github/copilot.vim",
-
-  "xiyaowong/transparent.nvim",
+  "xiyaowong/transparent.nvim", -- transparent background
 }
