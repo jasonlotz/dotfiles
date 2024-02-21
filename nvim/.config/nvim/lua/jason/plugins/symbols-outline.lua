@@ -3,6 +3,6 @@ return {
   cmd = { "SymbolsOutline" },
   config = true,
   keys = {
-    { "<leader>cs", "<cmd>SymbolsOutline<CR>", desc = "Symbols outline" },
+    { "<leader>cs", "<cmd>SymbolsOutline<cr>", desc = "Symbols outline" },
   },
 }

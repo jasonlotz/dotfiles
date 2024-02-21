@@ -27,9 +27,9 @@ return {
         path_display = { "truncate " },
         mappings = {
           i = {
-            ["<C-k>"] = actions.move_selection_previous, -- move to prev result
-            ["<C-j>"] = actions.move_selection_next, -- move to next result
-            ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+            ["<c-k>"] = actions.move_selection_previous, -- move to prev result
+            ["<c-j>"] = actions.move_selection_next, -- move to next result
+            ["<c-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
           },
         },
       },
@@ -39,10 +39,10 @@ return {
     telescope.load_extension("harpoon")
   end,
   keys = {
-    { "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "Fuzzy find files in cwd" },
-    { "<leader>fr", "<cmd>Telescope oldfiles<CR>", desc = "Fuzzy find recent files" },
-    { "<leader>fs", "<cmd>Telescope live_grep<CR>", desc = "Find string in cwd" },
-    { "<leader>fc", "<cmd>Telescope grep_string<CR>", desc = "Find string under cursor in cwd" },
-    { "<leader>fo", "<cmd>Telescope buffers<CR>", desc = "Fuzzy find buffers" },
+    { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Fuzzy find files in cwd" },
+    { "<leader>fr", "<cmd>Telescope oldfiles<cr>", desc = "Fuzzy find recent files" },
+    { "<leader>fs", "<cmd>Telescope live_grep<cr>", desc = "Find string in cwd" },
+    { "<leader>fc", "<cmd>Telescope grep_string<cr>", desc = "Find string under cursor in cwd" },
+    { "<leader>fo", "<cmd>Telescope buffers<cr>", desc = "Fuzzy find buffers" },
   },
 }

@@ -6,7 +6,7 @@ return {
   },
   keys = {
 
-    { "<leader>wr", "<cmd>SessionRestore<CR>", desc = "Restore session for cwd" }, -- restore last workspace session for current directory
-    { "<leader>ws", "<cmd>SessionSave<CR>", desc = "Save session for cwd" }, -- save last workspace session for current directory
+    { "<leader>wr", "<cmd>SessionRestore<cr>", desc = "Restore session for cwd" }, -- restore last workspace session for current directory
+    { "<leader>ws", "<cmd>SessionSave<cr>", desc = "Save session for cwd" }, -- save last workspace session for current directory
   },
 }

@@ -79,8 +79,8 @@ return {
     end,
     --stylua: ignore
     keys = {
-      { "<leader>dO", function() require("dap").step_out() end, desc = "Step Out", },
-      { "<leader>do", function() require("dap").step_over() end, desc = "Step Over", },
+      { "<leader>dO", function() require("dap").step_out() end, desc = "Step out", },
+      { "<leader>do", function() require("dap").step_over() end, desc = "Step over", },
       { "<leader>da",
         function()
           if vim.fn.filereadable(".vscode/launch.json") then
@@ -93,7 +93,7 @@ return {
           end
           require("dap").continue()
         end,
-        desc = "Run with Args",
+        desc = "Run with args",
       },
     },
     dependencies = {
@@ -149,7 +149,7 @@ return {
             },
             mappings = {
               -- Use a table to apply multiple mappings
-              expand = { "<CR>", "<2-LeftMouse>" },
+              expand = { "<cr>", "<2-LeftMouse>" },
               open = "o",
               remove = "d",
               edit = "e",
@@ -178,7 +178,7 @@ return {
               max_height = nil, -- These can be integers or a float between 0 and 1.
               max_width = nil, -- Floats will be treated as percentage of your screen.
               mappings = {
-                close = { "q", "<Esc>" },
+                close = { "q", "<esc>" },
               },
             },
             windows = { indent = 1 },
@@ -186,7 +186,7 @@ return {
         end,
         --stylua: ignore
         keys = {
-          { "<leader>du", function() require("dapui").toggle() end, desc = "Step Out", },
+          { "<leader>du", function() require("dapui").toggle() end, desc = "Step out", },
         },
       },
       {

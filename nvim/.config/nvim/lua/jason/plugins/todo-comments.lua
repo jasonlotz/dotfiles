@@ -3,7 +3,7 @@ return {
   dependencies = { "nvim-lua/plenary.nvim" },
   opts = {},
   keys = {
-    { "<leader>ft", "<cmd>TodoTelescope<cr>", desc = "Telescope Todo" },
-    { "<leader>xt", "<cmd>TodoTrouble<cr>", desc = "Toggle Trouble Todo" },
+    { "<leader>ft", "<cmd>TodoTelescope<cr>", desc = "Telescope todo" },
+    { "<leader>xt", "<cmd>TodoTrouble<cr>", desc = "Toggle trouble todo" },
   },
 }
