@@ -30,7 +30,7 @@ return {
       },
       mapping = cmp.mapping.preset.insert({
         ["<c-k>"] = cmp.mapping.select_prev_item(), -- previous suggestion
-        ["c-j>"] = cmp.mapping.select_next_item(), -- next suggestion
+        ["<c-j>"] = cmp.mapping.select_next_item(), -- next suggestion
         ["<c-b>"] = cmp.mapping.scroll_docs(-4),
         ["<c-f>"] = cmp.mapping.scroll_docs(4),
         ["<c-space>"] = cmp.mapping.complete(), -- show completion suggestions
