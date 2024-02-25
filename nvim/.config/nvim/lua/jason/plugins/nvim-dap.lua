@@ -81,6 +81,7 @@ return {
     keys = {
       { "<leader>dO", function() require("dap").step_out() end, desc = "Step out", },
       { "<leader>do", function() require("dap").step_over() end, desc = "Step over", },
+      { "<leader>db", function() require("dap").toggle_breakpoint() end, desc = "Toggle breakpoint"},
       { "<leader>da",
         function()
           if vim.fn.filereadable(".vscode/launch.json") then
@@ -186,7 +187,10 @@ return {
         end,
         --stylua: ignore
         keys = {
-          { "<leader>du", function() require("dapui").toggle() end, desc = "Step out", },
+          { "<leader>du", function() require("dapui").toggle() end, desc = "Toggle debugger", },
+          { "<leader>dh", function() require("dapui").toggle("hover") end, desc = "Toggle hover", },
+          { "<leader>de", function() require("dapui").eval() end, desc = "Evaluate expression", },
+          { "<leader>dE", function() require("dapui").eval(true) end, desc = "Evaluate expression (visual selection)", },
         },
       },
       {
