@@ -59,6 +59,31 @@ return {
       keymap.set("n", "<leader>rs", ":LspRestart<cr>", opts) -- mapping to restart lsp if necessary
     end
 
+    local border = {
+      { "┌", "FloatBorder" },
+      { "─", "FloatBorder" },
+      { "┐", "FloatBorder" },
+      { "│", "FloatBorder" },
+      { "┘", "FloatBorder" },
+      { "─", "FloatBorder" },
+      { "└", "FloatBorder" },
+      { "│", "FloatBorder" },
+    }
+
+    -- Add the border on hover and on signature help popup window
+    local handlers = {
+      ["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = border }),
+      ["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = border }),
+    }
+
+    -- Add border to the diagnostic popup window
+    vim.diagnostic.config({
+      virtual_text = {
+        prefix = "■ ", -- Could be '●', '▎', 'x', '■', , 
+      },
+      float = { border = border },
+    })
+
     -- used to enable autocompletion (assign to every lsp server config)
     local capabilities = cmp_nvim_lsp.default_capabilities()
 
@@ -71,36 +96,42 @@ return {
 
     -- configure html server
     lspconfig["html"].setup({
+      handlers = handlers,
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
     -- configure typescript server with plugin
     lspconfig["tsserver"].setup({
+      handlers = handlers,
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
     -- configure css server
     lspconfig["cssls"].setup({
+      handlers = handlers,
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
     -- configure tailwindcss server
     lspconfig["tailwindcss"].setup({
+      handlers = handlers,
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
     -- configure prisma orm server
     lspconfig["prismals"].setup({
+      handlers = handlers,
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
     -- configure graphql language server
     lspconfig["graphql"].setup({
+      handlers = handlers,
       capabilities = capabilities,
       on_attach = on_attach,
       filetypes = { "graphql", "gql", "typescriptreact", "javascriptreact" },
@@ -108,6 +139,7 @@ return {
 
     -- configure emmet language server
     lspconfig["emmet_ls"].setup({
+      handlers = handlers,
       capabilities = capabilities,
       on_attach = on_attach,
       filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less" },
@@ -115,17 +147,20 @@ return {
 
     -- configure python server
     lspconfig["pyright"].setup({
+      handlers = handlers,
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
     -- configure jdtls (java) server
     lspconfig["jdtls"].setup({
+      handlers = handlers,
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
     lspconfig["gopls"].setup({
+      handlers = handlers,
       capabilities = capabilities,
       on_attach = on_attach,
       cmd = { "gopls" },
@@ -144,6 +179,7 @@ return {
 
     -- configure lua server (with special settings)
     lspconfig["lua_ls"].setup({
+      handlers = handlers,
       capabilities = capabilities,
       on_attach = on_attach,
       settings = { -- custom settings for lua
