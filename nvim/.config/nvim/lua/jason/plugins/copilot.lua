@@ -12,6 +12,6 @@ return {
       end
       copilot_on = not copilot_on
     end, { nargs = 0 })
-    vim.keymap.set("n", "<leader>co", ":CopilotToggle<CR>", { desc = "Toggle Copilot", noremap = true, silent = true })
+    vim.keymap.set("n", "<leader>co", ":CopilotToggle<CR>", { desc = "Copilot: toggle", noremap = true, silent = true })
   end,
 }
