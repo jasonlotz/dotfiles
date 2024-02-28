@@ -71,7 +71,7 @@ return {
       { "│", "FloatBorder" },
     }
 
-    -- Already configured by Noice.  Uncomment if you want to use it.
+    -- Already configured by Noice.  Uncomment if you want to use it (as well as the handlers assignment in each lspconfig below).
     -- Add the border on hover and on signature help popup window
     -- local handlers = {
     --   ["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = border }),
@@ -97,42 +97,42 @@ return {
 
     -- configure html server
     lspconfig["html"].setup({
-      handlers = handlers,
+      -- handlers = handlers,
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
     -- configure typescript server with plugin
     lspconfig["tsserver"].setup({
-      handlers = handlers,
+      -- handlers = handlers,
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
     -- configure css server
     lspconfig["cssls"].setup({
-      handlers = handlers,
+      -- handlers = handlers,
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
     -- configure tailwindcss server
     lspconfig["tailwindcss"].setup({
-      handlers = handlers,
+      -- handlers = handlers,
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
     -- configure prisma orm server
     lspconfig["prismals"].setup({
-      handlers = handlers,
+      -- handlers = handlers,
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
     -- configure graphql language server
     lspconfig["graphql"].setup({
-      handlers = handlers,
+      -- handlers = handlers,
       capabilities = capabilities,
       on_attach = on_attach,
       filetypes = { "graphql", "gql", "typescriptreact", "javascriptreact" },
@@ -140,7 +140,7 @@ return {
 
     -- configure emmet language server
     lspconfig["emmet_ls"].setup({
-      handlers = handlers,
+      -- handlers = handlers,
       capabilities = capabilities,
       on_attach = on_attach,
       filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less" },
@@ -148,20 +148,20 @@ return {
 
     -- configure python server
     lspconfig["pyright"].setup({
-      handlers = handlers,
+      -- handlers = handlers,
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
     -- configure jdtls (java) server
     lspconfig["jdtls"].setup({
-      handlers = handlers,
+      -- handlers = handlers,
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
     lspconfig["gopls"].setup({
-      handlers = handlers,
+      -- handlers = handlers,
       capabilities = capabilities,
       on_attach = on_attach,
       cmd = { "gopls" },
@@ -180,7 +180,7 @@ return {
 
     -- configure lua server (with special settings)
     lspconfig["lua_ls"].setup({
-      handlers = handlers,
+      -- handlers = handlers,
       capabilities = capabilities,
       on_attach = on_attach,
       settings = { -- custom settings for lua
