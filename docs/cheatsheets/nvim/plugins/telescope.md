@@ -7,6 +7,7 @@
 - `<leader>fs`: Find string in cwd using grep syntax
 - `<leader>fc`: Find string under cursor in cwd
 - `<leader>fo`: Fuzzy find open buffers
+- `<leader>fh`: Fuzzy find help tags
 - `<leader>fb`: Open file browser
 
 ## Links
