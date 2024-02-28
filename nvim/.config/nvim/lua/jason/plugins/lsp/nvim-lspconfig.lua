@@ -71,11 +71,11 @@ return {
       { "│", "FloatBorder" },
     }
 
+    -- Already configured by Noice.  Uncomment if you want to use it.
     -- Add the border on hover and on signature help popup window
-    local handlers = {
-      ["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = border }),
-      ["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = border }),
-    }
+    -- local handlers = {
+    --   ["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = border }),
+    --   ["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = border }),
 
     -- Add border to the diagnostic popup window
     vim.diagnostic.config({
