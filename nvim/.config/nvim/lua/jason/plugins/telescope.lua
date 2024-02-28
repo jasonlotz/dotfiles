@@ -5,6 +5,7 @@ return {
     "nvim-lua/plenary.nvim",
     { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
     "nvim-tree/nvim-web-devicons",
+    "nvim-telescope/telescope-ui-select.nvim",
   },
   config = function()
     local telescope = require("telescope")
@@ -23,6 +24,11 @@ return {
           hidden = true,
         },
       },
+      extensions = {
+        ["ui-select"] = {
+          require("telescope.themes").get_dropdown({}),
+        },
+      },
       defaults = {
         path_display = { "truncate " },
         mappings = {
@@ -37,6 +43,7 @@ return {
 
     telescope.load_extension("fzf")
     telescope.load_extension("harpoon")
+    telescope.load_extension("ui-select")
   end,
   keys = {
     { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Fuzzy find files in cwd" },
