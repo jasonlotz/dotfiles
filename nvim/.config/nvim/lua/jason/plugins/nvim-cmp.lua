@@ -1,5 +1,4 @@
 return {
-  "hrsh7th/nvim-cmp",
   event = "InsertEnter",
   dependencies = {
     "hrsh7th/cmp-buffer", -- source for text in buffer
@@ -21,13 +20,14 @@ return {
 
     cmp.setup({
       completion = {
-        completeopt = "menu,menuone,preview,noselect",
+        completeopt = "menu,menuone,noinsert,noselect",
       },
       snippet = { -- configure how nvim-cmp interacts with snippet engine
         expand = function(args)
           luasnip.lsp_expand(args.body)
         end,
       },
+
       mapping = cmp.mapping.preset.insert({
         ["<c-k>"] = cmp.mapping.select_prev_item(), -- previous suggestion
         ["<c-j>"] = cmp.mapping.select_next_item(), -- next suggestion
@@ -35,7 +35,21 @@ return {
         ["<c-f>"] = cmp.mapping.scroll_docs(4),
         ["<c-space>"] = cmp.mapping.complete(), -- show completion suggestions
         ["<c-e>"] = cmp.mapping.abort(), -- close completion window
-        ["<cr>"] = cmp.mapping.confirm({ select = false }),
+        ["<c-y>"] = cmp.mapping.confirm({ select = true }),
+        ["<c-l>"] = cmp.mapping(function(fallback)
+          if luasnip.expand_or_jumpable() then
+            luasnip.expand_or_jump()
+          else
+            fallback()
+          end
+        end, { "i", "s" }),
+        ["<c-h>"] = cmp.mapping(function(fallback)
+          if luasnip.jumpable(-1) then
+            luasnip.jump(-1)
+          else
+            fallback()
+          end
+        end, { "i", "s" }),
       }),
       -- sources for autocompletion
       sources = cmp.config.sources({
