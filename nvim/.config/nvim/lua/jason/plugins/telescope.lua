@@ -51,6 +51,6 @@ return {
     { "<leader>fs", "<cmd>Telescope live_grep<cr>", desc = "Find string in cwd" },
     { "<leader>fc", "<cmd>Telescope grep_string<cr>", desc = "Find string under cursor in cwd" },
     { "<leader>fo", "<cmd>Telescope buffers<cr>", desc = "Fuzzy find buffers" },
-    { "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Fuzzy find help tags" },
+    { "<leader>fH", "<cmd>Telescope help_tags<cr>", desc = "Fuzzy find help tags" },
   },
 }
