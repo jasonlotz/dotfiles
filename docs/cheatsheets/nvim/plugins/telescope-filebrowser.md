@@ -3,6 +3,7 @@
 ## File Browser
 
 - `<leader>fb`: Telescope file browser
+- `<leader>fB`: Telescope file browser (folders only)
 
 ## Links
 
