@@ -26,7 +26,6 @@ return {
         e = "File explorer",
         f = "Fuzzy find",
         g = "Git",
-        m = "Format",
         n = "Swap next",
         o = "Obsidian",
         p = "Swap Previous",

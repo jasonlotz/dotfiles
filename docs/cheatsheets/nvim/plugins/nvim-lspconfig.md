@@ -7,9 +7,8 @@
 - `gd`: Show LSP definitions
 - `gi`: Show LSP implementations
 - `gt`: Show LSP type definitions
-- `<leader>ca`: See available code actions
-- `gh`: Show documentation for what is under cursor (press twice to enable scrolling)
-- `<leader>cn`: Smart rename
+- `gh`: Show documentation hover (press twice to enable scrolling)
+- `<leader>cr`: Smart rename
 
 ## Diagnostics
 
@@ -17,6 +16,15 @@
 - `<leader>d`: Show line diagnostics
 - `[d`: Go to previous diagnostic
 - `]d`: Got to next diagnostic
+
+## Code actions
+
+- `<leader>ca`: See available code actions
+
+## Symbol search
+
+- `<leader>cd`: Show LSP document symbols
+- `<leader>cw`: Show LSP workspace symbols
 
 ## Manage LSP
 
