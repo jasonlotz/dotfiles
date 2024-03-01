@@ -33,7 +33,7 @@
 - `r -> ]`
 - ``q -> ", ', ` ``
 - `s -> }, ], ), >, ", ', `
-- `t -> <?>asdfasdfasdf</?>`
+- `t -> <outer>inner</outer>`
 - `f -> functionCall()`
 
 ## Links
