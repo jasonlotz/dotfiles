@@ -3,7 +3,7 @@
 ## General
 
 - `jk`: Exit insert mode
-- `nh`: Clear search highlights
+- `uh`: Clear search highlights
 
 ## Quick save
 

@@ -8,7 +8,7 @@ keymap.set("i", "jk", "<esc>", { desc = "Exit insert mode with jk" })
 keymap.set("v", "jk", "<esc>", { desc = "Exit insert mode with jk" })
 
 -- clear search highlights
-keymap.set("n", "<leader>nh", ":nohl<cr>", { desc = "Clear search highlights" })
+keymap.set("n", "<leader>uh", ":nohl<cr>", { desc = "Clear search highlights" })
 
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
