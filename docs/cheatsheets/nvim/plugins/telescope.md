@@ -1,13 +1,17 @@
 # telescope
 
-## Fuzzy find files
+## Fuzzy find
 
 - `<leader>ff`: Fuzzy find files in cwd
 - `<leader>fr`: Fuzzy find recent files
 - `<leader>fs`: Find string in cwd using grep syntax
-- `<leader>fc`: Find string under cursor in cwd
+- `<leader>fg`: Find (grep) string under cursor in cwd
 - `<leader>fo`: Fuzzy find open buffers
 - `<leader>fH`: Fuzzy find help tags
+- `<leader>fc`: Fuzzy find current buffer
+
+## File browser
+
 - `<leader>fb`: Open file browser
 
 ## Links
