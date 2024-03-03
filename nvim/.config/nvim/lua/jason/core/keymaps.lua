@@ -49,7 +49,7 @@ keymap.set("n", "N", "Nzzzv", { desc = "Move cursor to previous search result" }
 -- magic replace term under cursor
 keymap.set(
   "n",
-  "<leader>R",
+  "<leader>rw",
   [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
   { desc = "Replace word under cursor" }
 )

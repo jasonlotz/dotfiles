@@ -21,7 +21,7 @@ return {
 
       -- set keybinds
       opts.desc = "Show LSP references"
-      keymap.set("n", "gR", "<cmd>Telescope lsp_references<cr>", opts) -- show definition, references
+      keymap.set("n", "gr", "<cmd>Telescope lsp_references<cr>", opts) -- show definition, references
 
       opts.desc = "Go to declaration"
       keymap.set("n", "gD", vim.lsp.buf.declaration, opts) -- go to declaration
@@ -63,7 +63,7 @@ return {
       keymap.set("n", "gh", vim.lsp.buf.hover, opts) -- show documentation for what is under cursor
 
       opts.desc = "Restart LSP"
-      keymap.set("n", "<leader>rs", ":LspRestart<cr>", opts) -- mapping to restart lsp if necessary
+      keymap.set("n", "<leader>cR", ":LspRestart<cr>", opts) -- mapping to restart lsp if necessary
     end
 
     local border = {

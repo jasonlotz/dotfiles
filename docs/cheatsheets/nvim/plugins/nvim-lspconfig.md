@@ -2,7 +2,7 @@
 
 ## For symbol under cursor
 
-- `gR`: Show LSP references
+- `gr`: Show LSP references
 - `gD`: Go to declaration
 - `gd`: Show LSP definitions
 - `gi`: Show LSP implementations
@@ -28,7 +28,7 @@
 
 ## Manage LSP
 
-- `<leader>rs`: Restart LSP
+- `<leader>cR`: Restart LSP
 
 ## Links
 

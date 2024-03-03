@@ -1,15 +1,27 @@
 # Replace with register
 
-## Normal mode
+## Unnamed register
 
-- `{count}["x]gr{motion}`: Replace {motion} text with the contents of register x or unnamed register
-- `{count}["x]grr`: Replace {count} lines with the contents of register x or unnamed register
-- `["x]gr$`: Replace from cursor position to end of the line
+### Normal mode
 
-## Visual mode
+- `<leader>r{motion}`: Replace {motion} text with the contents of the unnamed register
+- `<leader>rr`: Replace {count} lines with the contents of the unnamed register
+- `<leader>r$`: Replace from cursor position to end of the line with the contents of the unnamed register
 
-- `["x"]gr`: Replace the selection with the contents of register x or unnamed register
+### Visual mode
+
+- `<leader>r`: Replace the selection with the contents of the unnamed register
+
+## Specify register
+
+- `"{register}<leader>r{motion}`: Replace {motion} text with the contents of register
+- `"{register}<leader>rr`: Replace {count} lines with the contents of register
+- `"{register}<leader>r$`: Replace from cursor position to end of the line with the contents of register
+
+### Visual mode
+
+- `"{register}<leader>r`: Replace the selection with the contents of register
 
 ## Links
 
-- https://github.com/vim-scripts/ReplaceWithRegister
+# Replace with register

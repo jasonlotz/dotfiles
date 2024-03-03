@@ -38,4 +38,4 @@
 
 ## Search/replace
 
-- `<leader>R`: Replace word under cursor with entered word
+- `<leader>rw`: Replace word under cursor with entered word

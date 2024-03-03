@@ -29,7 +29,7 @@ return {
         n = "Swap next",
         o = "Obsidian",
         p = "Swap Previous",
-        r = "Restart",
+        r = "Replace",
         s = "Split",
         t = "Tab",
         u = "Dismiss / clear",
