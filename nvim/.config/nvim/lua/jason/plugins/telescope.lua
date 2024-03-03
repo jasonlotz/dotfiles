@@ -23,6 +23,11 @@ return {
           file_ignore_patterns = { "node_modules/", ".git/", ".venv/", ".obsidian/" },
           hidden = true,
         },
+        current_buffer_fuzzy_find = {
+          theme = "dropdown",
+          winblend = 10,
+          previewer = false,
+        },
       },
       extensions = {
         ["ui-select"] = {
@@ -52,6 +57,6 @@ return {
     { "<leader>fg", "<cmd>Telescope grep_string<cr>", desc = "Find string under cursor in cwd" },
     { "<leader>fo", "<cmd>Telescope buffers<cr>", desc = "Fuzzy find buffers" },
     { "<leader>fH", "<cmd>Telescope help_tags<cr>", desc = "Fuzzy find help tags" },
-    { "<leader>fc", "<cmd>Telescope current_buffer_fuzzy_find", desc = "Fuzzy find current buffer" },
+    { "<leader>fc", "<cmd>Telescope current_buffer_fuzzy_find<cr>", desc = "Fuzzy find in current buffer" },
   },
 }
