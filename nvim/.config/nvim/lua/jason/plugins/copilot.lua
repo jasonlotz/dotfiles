@@ -1,5 +1,6 @@
 return {
   "github/copilot.vim",
+  event = "VeryLazy",
   config = function()
     local copilot_on = true
     vim.api.nvim_create_user_command("CopilotToggle", function()
@@ -16,4 +17,5 @@ return {
   keys = {
     { "<leader>co", "<cmd>CopilotToggle<cr>", desc = "Copilot: toggle", noremap = true, silent = true },
   },
+  test,
 }
