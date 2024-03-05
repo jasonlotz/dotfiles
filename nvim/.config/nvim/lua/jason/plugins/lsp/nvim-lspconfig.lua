@@ -39,7 +39,7 @@ return {
       keymap.set("n", "<leader>cd", "<cmd>Telescope lsp_document_symbols<cr>", opts) -- show document symbols
 
       opts.desc = "Show workplace symbols"
-      keymap.set("n", "<leader>cw", "<cmd>Telescope lsp_workspace_symbols<cr>", opts) -- show workspace symbols
+      keymap.set("n", "<leader>cw", "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>", opts) -- show workspace symbols
 
       opts.desc = "See available code actions"
       keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts) -- see available code actions, in visual mode will apply to selection
