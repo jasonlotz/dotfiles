@@ -58,5 +58,6 @@ return {
     { "<leader>fo", "<cmd>Telescope buffers<cr>", desc = "Fuzzy find buffers" },
     { "<leader>fH", "<cmd>Telescope help_tags<cr>", desc = "Fuzzy find help tags" },
     { "<leader>fc", "<cmd>Telescope current_buffer_fuzzy_find<cr>", desc = "Fuzzy find in current buffer" },
+    { "<leader>fm", "<cmd>Telescope marks<cr>", desc = "Fuzzy find marks" },
   },
 }
