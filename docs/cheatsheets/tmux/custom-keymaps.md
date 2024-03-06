@@ -2,7 +2,7 @@
 
 ## Prefix
 
-- `<ctrl>s`: Prefix
+- `<ctrl> + s`: Prefix
 
 ## Resize panes
 
