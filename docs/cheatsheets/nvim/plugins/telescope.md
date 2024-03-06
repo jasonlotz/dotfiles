@@ -10,6 +10,7 @@
 - `<leader>fH`: Fuzzy find help tags
 - `<leader>fc`: Fuzzy find current buffer
 - `<leader>fm`: Fuzzy find marks
+- `<leader>fj`: Fuzzy find jumplist
 
 ## File browser
 
