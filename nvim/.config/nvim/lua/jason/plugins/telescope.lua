@@ -60,5 +60,7 @@ return {
     { "<leader>fc", "<cmd>Telescope current_buffer_fuzzy_find<cr>", desc = "Fuzzy find in current buffer" },
     { "<leader>fm", "<cmd>Telescope marks<cr>", desc = "Fuzzy find marks" },
     { "<leader>fj", "<cmd>Telescope jumplist<cr>", desc = "Fuzzy find jumplist" },
+    { "<leader>fq", "<cmd>Telescope quickfix<cr>", desc = "Fuzzy find quickfix" },
+    { "<leader>fQ", "<cmd>Telescope quickfixhistory<cr>", desc = "Fuzzy find quickfix history" },
   },
 }

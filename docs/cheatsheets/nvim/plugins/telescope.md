@@ -11,6 +11,8 @@
 - `<leader>fc`: Fuzzy find current buffer
 - `<leader>fm`: Fuzzy find marks
 - `<leader>fj`: Fuzzy find jumplist
+- `<leader>fq`: Fuzzy find quickfix
+- `<leader>fQ`: Fuzzy find quickfix history
 
 ## File browser
 
