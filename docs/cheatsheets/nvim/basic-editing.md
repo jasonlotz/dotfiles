@@ -52,9 +52,9 @@
 
 ## Miscellaneous
 
-- `~`: Change case
+- `{count}~`: Change case
 - `<ctrl> + a`, `<ctrl> + x`: Increment, decrement number under cursor
-- {count} + `J`: Join N-1 lines
+- `{count}J`: Join N-1 lines
 - `>>`, `<<`: Indent, outdent
 
 ## Insert mode
