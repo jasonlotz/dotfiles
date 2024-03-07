@@ -14,7 +14,7 @@
 ## Single-line
 
 - `0`: Start of line
-- `^`: First character of line
+- `^` or `_`: First character of line
 - {count} + `$`: End of line
 - `(`, `)`: Next sentence (backward, forward)
 - `{`, `}`: Next blank line (backward, forward)
@@ -26,8 +26,15 @@
 - `H`, `M`, `L`: Top, middle, bottom of screen
 - `<ctrl> + u`, `<ctrl> + d`: Half page up, down
 - `<ctrl> + f`, `<ctrl> + b`: Full page up, down
-- {count} + `gg`: Move to line
+- {linenum} + `gg`: Move to line #
 - `N%`: Move to percent of file
+
+## Move to character
+
+- `{count}F`: Find character (backward)
+- `{count}f`: Find character (forward)
+- `{count}T`: Till character (backward)
+- `{count}t`: Till character (forward)
 
 ## Miscellaneous
 

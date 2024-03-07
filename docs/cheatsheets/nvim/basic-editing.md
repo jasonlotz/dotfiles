@@ -2,53 +2,53 @@
 
 ## Visual mode
 
-- {count} + `v`: Visual mode (enter & exit)
-- {count} + `V`: Visual line mode
+- `v{motion}`: Visual mode (enter & exit)
+- `V{motion}`: Visual line mode
 - `o`: Exchange cursor position with start/end of highlighting
 
 ## Insert
 
 - `i`, `a`: Insert at cursor (before, after)
 - `I`, `A`: Insert at line (start, end)
+- `o`, `O`: Insert at line (below, above)
 
 ## Delete
 
-- {count} + `x`, `X`: Delete character from cursor (forwards, backwards)
-- {count} + `d{motion}`: Delete the text that is moved over with motion
-- {count} + `D`: Delete to the end of the line
-- {count} + `dd`: Delete line
+- `{count}x`: Delete character from cursor (forwards)
+- `{count}X`: Delete character from cursor (backwards)
+
+- `d{count}{motion}`: Delete the text that is moved over with motion
+- `D`: Delete to the end of the line
+- `{count}dd`: Delete line
 
 ## Copy (yank)
 
-- {count} + `y{motion}`: Copy the text that is moved over with the motion
-- {count} + `Y`: Copy line
-- {count} + `yy`: Copy line
+- `y{count}{motion}`: Copy the text that is moved over with the motion
+- `Y`: Copy line
+- `{count}yy`: Copy line
 
 ## Change (delete + insert mode)
 
-- {count} + `c{motion}`: Delete the text that is moved over with the motion & enter insert mode
-- {count} + `C`: Delete to the end of the line & enter insert mode
-- {count} + `cc`: Delete line & enter insert mode
-- {count} + `S`: Delete line & enter insert mode
-- {count} + `s`: Delete character & enter insert mode
+- `c{count}{motion}`: Delete the text that is moved over with the motion & enter insert mode
+- `C`: Delete to the end of the line & enter insert mode
+- `{count}cc`: Delete line & enter insert mode
+- `S`: Delete line & enter insert mode
+- `{count}s`: Delete character & enter insert mode
 
 ## Replace
 
-- {count} + `r{char}`: Replace character with {char}
+- `{count}r{char}`: Replace character with `{char}`
 - `R`: Replace mode
 
 ## Paste
 
-- {count} + `P`, `p`: Paste contents of register at cursor (before, after)
+- `{count}P`: Paste contents of register at cursor (before)
+- `{count}p`: Paste contents of register at cursor (after)
 
 ## Undo/redo
 
-- {count} + `u`: Undo
-- {count} + `<ctrl> + r`: Redo
-
-## Find
-
-- {count} + `f`, `F`: Find character (forward, backward)
+- `{count}u`: Undo
+- `{count}<ctrl> + r>`: Redo
 
 ## Miscellaneous
 
