@@ -12,6 +12,8 @@
 - `:s/foo/bar` - Replace the first occurrence of `foo` with `bar` in the current line
 - `:s/foo/bar/g` - Replace all occurrences of `foo` with `bar` in the current line
 - `:%s/foo/bar/g` - Replace all occurrences of `foo` with `bar` in the entire file
+- `:%s/foo/bar/gc` - Replace all occurrences of `foo` with `bar` in the entire file, but ask for confirmation
+- `:%s/foo/bar` - Replace the first occurrence on each line of `foo` with `bar` in the entire file
 - `:10,20s/foo/bar/g` - Replace all occurrences of `foo` with `bar` between lines 10 and 20
 
 ## Advanced search and replace
