@@ -19,6 +19,8 @@
 - {count} + `$`: End of line
 - `(`, `)`: Next sentence (backward, forward)
 - `{`, `}`: Next blank line (backward, forward)
+- `<enter>`: Beginning of next line
+- `-`: Beginning of previous line
 
 ## Multi-line / page
 
