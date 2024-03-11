@@ -32,6 +32,10 @@
 
 - `<prefix>r`: Refresh config
 
+## Harpoon intergration
+
+- `<prefix>G`: Switch back to last nvim instance
+
 ## Links
 
 - https://github.com/tmux-plugins/tpm
