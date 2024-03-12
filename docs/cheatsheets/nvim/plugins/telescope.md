@@ -13,6 +13,7 @@
 - `<leader>fj`: Fuzzy find jumplist
 - `<leader>fq`: Fuzzy find quickfix
 - `<leader>fQ`: Fuzzy find quickfix history
+  `<leader>fR`: Fuzzy find registers
 
 ## File browser
 

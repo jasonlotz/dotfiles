@@ -62,5 +62,6 @@ return {
     { "<leader>fj", "<cmd>Telescope jumplist<cr>", desc = "Fuzzy find jumplist" },
     { "<leader>fq", "<cmd>Telescope quickfix<cr>", desc = "Fuzzy find quickfix" },
     { "<leader>fQ", "<cmd>Telescope quickfixhistory<cr>", desc = "Fuzzy find quickfix history" },
+    { "<leader>fR", "<cmd>Telescope registers<cr>", desc = "Fuzzy find registers" },
   },
 }
