@@ -4,6 +4,11 @@
 
 - `<ctrl> + s`: Prefix
 
+## Switch sessions
+
+- `<prefix>s`: Switch session (choose tree)
+- `<prefix>S`: Switch session (by name prefix)
+
 ## Resize panes
 
 - `<prefix>k`: Resize pane (up)
