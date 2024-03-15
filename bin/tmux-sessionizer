@@ -3,7 +3,7 @@
 session=$(find ~ ~/Workspaces -type d -maxdepth 1 | fzf)
 session_name=$(basename "$session" | tr . -)
 
-if ! tmux tmux has-session -t "$session_name" > /dev/null; then
+if ! tmux has-session -t "$session_name" 2> /dev/null; then
   tmux new-session -s "$session_name" -c "$session" -d
 fi
 

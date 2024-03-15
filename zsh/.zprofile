@@ -26,4 +26,4 @@ export ovault=~"/Library/Mobile Documents/iCloud~md~obsidian/Documents/obsidian-
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-bindkey -s ^f "/Users/jason/Workspaces/dotfiles/tmux/tmux-sessionizer\n"
+bindkey -s ^f "tmux-sessionizer\n"
