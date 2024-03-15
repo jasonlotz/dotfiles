@@ -41,6 +41,10 @@
 
 - `<prefix>G`: Switch back to last nvim instance
 
+## Tmux sessionizer
+
+- `<ctrl> + f`: Open tmux sessionizer
+
 ## Links
 
 - https://github.com/tmux-plugins/tpm

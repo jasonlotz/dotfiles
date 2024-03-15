@@ -53,3 +53,11 @@ keymap.set(
   [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
   { desc = "Replace word under cursor" }
 )
+
+-- tmux sessionizer
+keymap.set(
+  "n",
+  "<c-f>",
+  ":silent !tmux neww tmux-sessionizer<cr>",
+  { noremap = true, silent = true, desc = "Open tmux sessionizer" }
+)

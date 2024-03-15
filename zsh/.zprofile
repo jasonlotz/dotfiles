@@ -21,7 +21,9 @@ alias tm="tmux attach || tmux new"
 PATH="$PATH:/Users/jason/Dropbox/Scripts/"
 
 # Obsidian
-export ovault="~/Library/Mobile Documents/iCloud~md~obsidian/Documents/obsidian-vault"
+export ovault=~"/Library/Mobile Documents/iCloud~md~obsidian/Documents/obsidian-vault"
 
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+bindkey -s ^f "/Users/jason/Workspaces/dotfiles/tmux/tmux-sessionizer\n"

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+session=$(find ~ ~/Workspaces -type d -maxdepth 1 | fzf)
+session_name=$(basename "$session" | tr . -)
+
+if ! tmux tmux has-session -t "$session_name" > /dev/null; then
+  tmux new-session -s "$session_name" -c "$session" -d
+fi
+
+tmux switch-client -t "$session_name"
