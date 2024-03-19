@@ -16,6 +16,7 @@ export tc=/Users/jason/Apps/apache-tomcat-8.5.72
 
 # tmux
 alias tm="tmux attach || tmux new"
+bindkey -s ^f "tmux-sessionizer\n"
 
 # Scripts
 PATH="$PATH:/Users/jason/Dropbox/Scripts/"
@@ -26,4 +27,3 @@ export ovault=~"/Library/Mobile Documents/iCloud~md~obsidian/Documents/obsidian-
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-bindkey -s ^f "tmux-sessionizer\n"
