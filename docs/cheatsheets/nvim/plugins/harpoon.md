@@ -22,3 +22,7 @@
 ## Telescope integration
 
 - `<leader>fh`: Telescope harpoon marks
+
+## Links
+
+- https://github.com/ThePrimeagen/harpoon

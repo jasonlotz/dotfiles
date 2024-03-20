@@ -24,4 +24,4 @@
 
 ## Links
 
-# Replace with register
+- https://github.com/inkarkat/vim-ReplaceWithRegister
