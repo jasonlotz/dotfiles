@@ -142,6 +142,8 @@ return {
       },
       {
         "rcarriga/nvim-dap-ui",
+        dependencies = { "nvim-neotest/nvim-nio" },
+        after = "nvim-dap-ui",
         config = function()
           require("dapui").setup({
             icons = {
