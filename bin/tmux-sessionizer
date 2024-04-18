@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-session=$(find ~ ~/Workspaces -type d -maxdepth 2 | fzf)
+session=$(find ~ -type d -maxdepth 3 | fzf)
 session_name=$(basename "$session" | tr . -)
 
 if ! tmux has-session -t "$session_name" 2> /dev/null; then
