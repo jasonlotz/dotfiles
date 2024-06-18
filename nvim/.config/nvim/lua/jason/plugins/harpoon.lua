@@ -7,7 +7,7 @@ return {
   end,
   -- stylua: ignore
   keys = {
-    { "<leader>a", function() require("harpoon"):list():append() end, desc = "Harpoon: append", },
+    { "<leader>a", function() require("harpoon"):list():add() end, desc = "Harpoon: add", },
     { "<leader>A", function() require("harpoon"):list():remove() end, desc = "Harpoon: remove", },
     { "<leader>;", function() require("harpoon"):list():next() end, desc = "Harpoon: next", },
     { "<leader>,", function() require("harpoon"):list():prev() end, desc = "Harpoon: previous", },
