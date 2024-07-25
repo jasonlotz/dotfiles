@@ -1,10 +1,6 @@
 return {
   "folke/which-key.nvim",
   event = "VeryLazy",
-  init = function()
-    vim.o.timeout = true
-    vim.o.timeoutlen = 300
-  end,
   opts = {
     win = {
       border = "single",
@@ -14,22 +10,22 @@ return {
       separator = "➜",
       group = "+",
     },
-    keys = {
-      { "<leader>c", desc = "Code" },
-      { "<leader>d", desc = "Debug" },
-      { "<leader>e", desc = "File explorer" },
-      { "<leader>f", desc = "Fuzzy find" },
-      { "<leader>g", desc = "Git" },
-      { "<leader>m", desc = "Flash search" },
-      { "<leader>n", desc = "Swap next" },
-      { "<leader>o", desc = "Obsidian" },
-      { "<leader>p", desc = "Swap Previous" },
-      { "<leader>r", desc = "Replace" },
-      { "<leader>s", desc = "Split" },
-      { "<leader>t", desc = "Tab" },
-      { "<leader>u", desc = "Dismiss / clear" },
-      { "<leader>w", desc = "Save" },
-      { "<leader>x", desc = "Trouble" },
-    },
+  },
+  keys = {
+    { "<leader>c", desc = "Code" },
+    { "<leader>d", desc = "Debug" },
+    { "<leader>e", desc = "File explorer" },
+    { "<leader>f", desc = "Fuzzy find" },
+    { "<leader>g", desc = "Git" },
+    { "<leader>m", desc = "Flash search" },
+    { "<leader>n", desc = "Swap next" },
+    { "<leader>o", desc = "Obsidian" },
+    { "<leader>p", desc = "Swap Previous" },
+    { "<leader>r", desc = "Replace" },
+    { "<leader>s", desc = "Split" },
+    { "<leader>t", desc = "Tab" },
+    { "<leader>u", desc = "Dismiss / clear" },
+    { "<leader>w", desc = "Save" },
+    { "<leader>x", desc = "Trouble" },
   },
 }
