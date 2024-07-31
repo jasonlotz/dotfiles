@@ -61,4 +61,4 @@
 
 - `<ctrl> + o`: Allow enter of a single command and then returns to insert mode
 - `<ctrl> + t`: Increase tab
-- `<ctrl> + t`: Decrease tab
+- `<ctrl> + d`: Decrease tab
