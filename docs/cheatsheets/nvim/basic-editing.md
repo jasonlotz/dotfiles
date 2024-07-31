@@ -48,7 +48,7 @@
 ## Undo/redo
 
 - `{count}u`: Undo
-- `{count}<ctrl> + r>`: Redo
+- `{count}<ctrl> + r`: Redo
 
 ## Miscellaneous
 
