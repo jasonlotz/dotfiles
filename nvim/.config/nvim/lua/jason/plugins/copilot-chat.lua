@@ -8,12 +8,9 @@ return {
   {
     "CopilotC-Nvim/CopilotChat.nvim",
     opts = {
-      disable_extra_info = "no", -- Disable extra information (e.g: system prompt) in the response.
+      debug = true,
     },
-    build = function()
-      vim.notify("Please update the remote plugins by running ':UpdateRemotePlugins', then restart Neovim.")
-    end,
-    event = "VeryLazy",
+    branch = "canary",
     keys = {
       { "<leader>cp", "<cmd>Copilot<cr>", desc = "Copilot: recommendations based on cursor location" },
       { "<leader>cc", ":CopilotChat ", desc = "CopilotChat:  ask question about code in register" },
