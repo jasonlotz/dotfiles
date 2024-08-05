@@ -17,5 +17,4 @@ return {
   keys = {
     { "<leader>co", "<cmd>CopilotToggle<cr>", desc = "Copilot: toggle", noremap = true, silent = true },
   },
-  test,
 }
