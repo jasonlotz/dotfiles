@@ -3,7 +3,7 @@
 ## Normal mode
 
 - `<leader>r{motion}`: Replace {motion} text with the contents of the unnamed register
-- `<leader>rr`: Replace {count} lines with the contents of the unnamed register
+- `<leader>rr`: Replace line with the contents of the unnamed register
 - `<leader>R`: Replace from cursor position to end of the line with the contents of the unnamed register
 
 ## Visual mode
@@ -12,4 +12,4 @@
 
 ## Links
 
-- https://github.com/gbprod/
+- https://github.com/gbprod/substitute.nvim
