@@ -2,7 +2,7 @@
 
 ## Incremental selection
 
-- `<ctrl><space>`: Incremental selection
+- `<ctrl> + <space>`: Incremental selection
 - `<bs>`: Decremental selection
 
 ## Links
