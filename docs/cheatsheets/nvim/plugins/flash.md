@@ -4,13 +4,13 @@
 
 (Move cursor to search)
 
-- `<leader>m{searchterm}{selectlabel}`: Choose label for {searchterm} to move cursor to
+- `s{searchterm}{selectlabel}`: Choose label for {searchterm} to move cursor to
 
 ## Flash Treesitter
 
 (Visual selection of chosen Treesitter node based on cursor start location)
 
-- `<leader>M{searchterm}{selectlabel}`: Start with cursor on symbol of interest, then choose a label for the desired selection
+- `S{searchterm}{selectlabel}`: Start with cursor on symbol of interest, then choose a label for the desired selection
 
 ## Remote Flash
 
@@ -26,9 +26,9 @@
 - `yR{searchterm}{selectlabel}`: Move the cursor to the {searchterm} where a Flash Treesitter search occurs then copy the {selectedlabel}
 - `dR{searchterm}{selectlabel}`: Move the cursor to the {searchterm} where a Flash Treesitter search occurs then delete the {selectedlabel}
 
-## Toggle
+## Toggle Flash Search (while in search mode)
 
-- `<ctrl>F`: Toggle Flash Search
+- `<leader>S`: Toggle Flash Search
 
 ## Links
 

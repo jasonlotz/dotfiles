@@ -2,13 +2,22 @@ return {
   "folke/flash.nvim",
   event = "VeryLazy",
   ---@type Flash.Config
-  opts = {},
+  opts = {
+    modes = {
+      char = {
+        jump_labels = true,
+      },
+      search = {
+        enabled = true,
+      },
+    },
+  },
   -- stylua: ignore
   keys = {
-    { "<leader>m", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash search" },
-    { "<leader>M", mode = { "n", "x", "o" }, function() require("flash").treesitter() end, desc = "Flash treesitter" },
-    { "r", mode = "o", function() require("flash").remote() end, desc = "Remote flash" },
-    { "R", mode = { "o", "x" }, function() require("flash").treesitter_search() end, desc = "Treesitter search" },
-    { "<c-F>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle flash search" },
+    { "s", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
+    { "S", mode = { "n", "x", "o" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
+    { "r", mode = { "o" }, function() require("flash").remote() end, desc = "Remote Flash" },
+    { "R", mode = { "o", "x" }, function() require("flash").treesitter_search() end, desc = "Treesitter Search" },
+    { "<leader>s", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
   },
 }
