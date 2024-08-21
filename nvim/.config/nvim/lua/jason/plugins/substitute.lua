@@ -1,6 +1,7 @@
 return {
   "gbprod/substitute.nvim",
   config = true,
+  event = "BufRead",
   keys = {
     { mode = "n", "<leader>r", "<cmd>lua require('substitute').operator()<cr>", desc = "substitute", noremap = true },
     { mode = "n", "<leader>rr", "<cmd>lua require('substitute').line()<cr>", desc = "substitute line", noremap = true },
