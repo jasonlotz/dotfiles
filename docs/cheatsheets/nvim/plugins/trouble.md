@@ -2,12 +2,12 @@
 
 ## Code trouble management
 
-- `<leader>xx`: Toggle Trouble
-- `<leader>xw`: Toggle Trouble Workspace Diagnostics
-- `<leader>xd`: Toggle Trouble Document Diagnostics
-- `<leader>xl`: Toggle Trouble Location List
-- `<leader>xq`: Toggle Trouble Quickfix
-- `<leader>xr`: Toggle Trouble LSP References
+- `<leader>xx`: Workspace Diagnostic
+- `<leader>xb`: Buffer Diagnostic
+- `<leader>xl`: Location List
+- `<leader>xq`: Quickfix
+- `<leader>xr`: LSP References
+- `<leader>xs`: Symbols
 
 ## Links
 
