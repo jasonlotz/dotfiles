@@ -1,12 +1,16 @@
 # copilot-chat
 
-## Built-in commands
+## General
 
-- `<leader>cc`: Ask question for code in register
-- `<leader>ce`: Explain code in register
-- `<leader>ct`: Generate tests for code in register
-- `<leader>cv`: Ask question for selected code (open in verticle split)
-- `<leader>cw`: Ask question for selected code (open in pop-up window)
+- `<leader>cc`: Ask a question
+
+## Visual mode
+
+- `<leader>ce`: Explain the selected code
+- `<leader>ct`: Generate tests for the selected code
+- `<leader>cf`: Fix the selected code
+- `<leader>cd`: Generate docs for the selected code
+- `<leader>co`: Optimize the selected code
 
 ## Links
 

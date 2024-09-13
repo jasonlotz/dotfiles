@@ -2,7 +2,7 @@
 
 ## Format
 
-- `<leader>cf`: Format the current buffer
+- `<leader>cF`: Format the current buffer
 
 ## Links
 
