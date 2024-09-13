@@ -32,6 +32,12 @@ return {
         mode = "x",
         desc = "CopilotChat: Optimize the selected code",
       },
+      {
+        "<leader>cr",
+        "<cmd>CopilotChatReview<cr>",
+        mode = "x",
+        desc = "CopilotChat: Review the selected code",
+      },
     },
   },
 }
