@@ -2,9 +2,9 @@
 
 ## General
 
-- `<leader>cc`: Ask a question
+- `<leader>cc`: Ask a question (optionally, select the code to ask about)
 
-## Visual mode
+## Visual mode only
 
 - `<leader>ce`: Explain the selected code
 - `<leader>ct`: Generate tests for the selected code

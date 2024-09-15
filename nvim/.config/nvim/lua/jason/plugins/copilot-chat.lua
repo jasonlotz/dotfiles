@@ -6,7 +6,7 @@ return {
     },
     branch = "canary",
     keys = {
-      { "<leader>cc", ":CopilotChat ", desc = "CopilotChat: ask a question" },
+      { "<leader>cc", ":CopilotChat ", mode = { "n", "x" }, desc = "CopilotChat: ask a question" },
       { "<leader>ce", "<cmd>CopilotChatExplain<cr>", mode = "x", desc = "CopilotChat: Explain the selected code" },
       {
         "<leader>ct",
