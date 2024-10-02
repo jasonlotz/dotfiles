@@ -15,7 +15,7 @@ export CATALINA_HOME=/Users/jason/Apps/apache-tomcat-8.5.72
 export tc=/Users/jason/Apps/apache-tomcat-8.5.72
 
 # Git
-alias gitpullall="find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull \;"
+alias gitpullall='find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull \;'
 
 # tmux
 alias tm="tmux attach || tmux new"
