@@ -1,6 +1,8 @@
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-export JAVA_HOME=`/usr/libexec/java_home`
+#export JAVA_HOME=`/usr/libexec/java_home`
+#export JAVA_HOME=`/Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home`
+export JAVA_HOME="$(/usr/libexec/java_home)"
 
 # Git
 alias gc=git commit -m @$ 
