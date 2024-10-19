@@ -46,6 +46,7 @@ return {
           "go",
           "scala",
           "groovy",
+          "java",
         },
         incremental_selection = {
           enable = true,
