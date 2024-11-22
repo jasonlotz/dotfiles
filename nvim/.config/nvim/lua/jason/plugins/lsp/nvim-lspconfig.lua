@@ -166,6 +166,13 @@ return {
       on_attach = on_attach,
     })
 
+    -- configure terraform server
+    lspconfig["terraformls"].setup({
+      -- handlers = handlers,
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
     lspconfig["gopls"].setup({
       -- handlers = handlers,
       capabilities = capabilities,
