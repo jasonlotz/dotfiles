@@ -1,7 +1,5 @@
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-#export JAVA_HOME=`/usr/libexec/java_home`
-#export JAVA_HOME=`/Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home`
 export JAVA_HOME="$(/usr/libexec/java_home)"
 
 # Git
@@ -27,8 +25,12 @@ bindkey -s ^f "tmux-sessionizer\n"
 PATH="$PATH:/Users/jason/Dropbox/Scripts/"
 
 # Obsidian
-export ovault=~"/Library/Mobile Documents/iCloud~md~obsidian/Documents/obsidian-vault"
+export ovault=~"/Documents/obsidian-vault"
 
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# butterfish
+alias bf="butterfish"
+alias bfs="butterfish shell"
+alias bfp="butterfish prompt"
