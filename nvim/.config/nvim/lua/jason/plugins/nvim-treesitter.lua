@@ -47,6 +47,7 @@ return {
           "scala",
           "groovy",
           "java",
+          "python",
         },
         incremental_selection = {
           enable = true,
