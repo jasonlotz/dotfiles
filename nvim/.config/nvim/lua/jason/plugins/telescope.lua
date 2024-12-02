@@ -40,7 +40,7 @@ return {
           i = {
             ["<c-k>"] = actions.move_selection_previous, -- move to prev result
             ["<c-j>"] = actions.move_selection_next, -- move to next result
-            ["<c-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+            ["<c-l>"] = actions.smart_add_to_qflist + actions.open_qflist,
           },
         },
       },
