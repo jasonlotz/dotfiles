@@ -48,6 +48,7 @@ return {
           "groovy",
           "java",
           "python",
+          "terraform",
         },
         incremental_selection = {
           enable = true,
