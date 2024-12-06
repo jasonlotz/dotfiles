@@ -4,7 +4,7 @@ return {
     opts = {
       debug = true,
     },
-    branch = "canary",
+    branch = "main",
     keys = {
       { "<leader>cc", ":CopilotChat ", mode = { "n", "x" }, desc = "CopilotChat: ask a question" },
       { "<leader>ce", "<cmd>CopilotChatExplain<cr>", mode = "x", desc = "CopilotChat: Explain the selected code" },
