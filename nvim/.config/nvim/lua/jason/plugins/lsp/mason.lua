@@ -52,7 +52,7 @@ return {
         "prettier", -- prettier formatter
         "stylua", -- lua formatter
         "isort", -- python formatter
-        "autopep8", -- python formatter
+        "black", -- python formatter
         "eslint_d", -- js linter
         "luacheck", -- lua linter
       },
