@@ -107,12 +107,32 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# powerlevel10k
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# fzf 
+source <(fzf --zsh)
+
+# butterfish
+export ZDOTDIR="$HOME"
+alias bf="butterfish"
+alias bfs="butterfish shell"
+alias bfp="butterfish prompt"
+
+# tmux
+alias tm="tmux attach || tmux new"
+bindkey -s ^f "tmux-sessionizer\n"
+
+# brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # azure cli auto completion
 autoload -U +X bashcompinit && bashcompinit
 source /opt/homebrew/etc/bash_completion.d/az
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# java
+export JAVA_HOME="$(/usr/libexec/java_home)"
 
-# Set up fzf key bindings and fuzzy completion
-source <(fzf --zsh)
+# git
+alias gitpullall='find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull \;'
