@@ -1,4 +1,4 @@
-# lazygit
+# snacks
 
 ## LazyGit integration
 
@@ -6,5 +6,5 @@
 
 ## Links
 
+- https://github.com/folke/snacks.nvim
 - https://github.com/jesseduffield/lazygit
-- https://github.com/kdheepak/
