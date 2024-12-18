@@ -10,8 +10,8 @@ return {
     -- import lspconfig plugin
     local lspconfig = require("lspconfig")
 
-    -- import cmp-nvim-lsp plugin
-    local cmp_nvim_lsp = require("cmp_nvim_lsp")
+    -- import blink capabilities
+    local blink_cmp_lsp = require("blink.cmp")
 
     local keymap = vim.keymap -- for conciseness
 
@@ -92,7 +92,7 @@ return {
     })
 
     -- used to enable autocompletion (assign to every lsp server config)
-    local capabilities = cmp_nvim_lsp.default_capabilities()
+    local capabilities = blink_cmp_lsp.get_lsp_capabilities()
 
     -- Change the Diagnostic symbols in the sign column (gutter)
     local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
