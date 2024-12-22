@@ -64,5 +64,7 @@ return {
         "python",
       },
     })
+
+    vim.keymap.set("n", "<leader>lm", "<cmd>Mason<cr>", { desc = "Mason LSP Manager" })
   end,
 }

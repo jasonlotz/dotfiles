@@ -1,6 +1,6 @@
 # Updates
 
-- `:Lazy`: Lazy package manager
-- `:Mason`: LSP manager
+- `<leader>ll`: Lazy package manager (equivalent to `:Lazy`)
+- `<leader>lm`: Mason LSP manager (equivalent to `:Mason`)
 - `:TSUpdate`: Update treesitter parsers
 - `:UpdateRemotePlugins`: Update remote plugins
