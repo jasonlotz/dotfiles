@@ -54,6 +54,11 @@ keymap.set(
   { desc = "Replace word under cursor" }
 )
 
+-- source/evaluate code
+keymap.set("n", "<leader>lf", "<cmd>source %<cr>", { desc = "Source current file" })
+keymap.set("n", "<leader>ll", ":.lua<cr>", { desc = "Execute current LUA line" })
+keymap.set("v", "<leader>ll", ":lua<cr>", { desc = "Execute highlighted LUA code" })
+
 -- tmux sessionizer
 keymap.set(
   "n",
