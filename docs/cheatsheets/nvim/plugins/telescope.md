@@ -17,7 +17,8 @@
 
 ## File browser
 
-- `<leader>fb`: Open file browser
+- `<leader>fb`: Telescope file browser
+- `<leader>fB`: Telescope file browser (folders only)
 
 ## Quickfix
 
@@ -26,3 +27,4 @@
 ## Links
 
 - https://github.com/nvim-telescope/telescope.nvim
+- https://github.com/nvim-telescope/telescope-file-browser.nvim
