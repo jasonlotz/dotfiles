@@ -2,8 +2,8 @@
 
 ## File browser
 
-- `<leader>fb`: Open mini file browser to directory of current file
-- `<leader>fB`: Open mini file browser to current working directory
+- `<leader>ef`: Open mini file browser to directory of current file
+- `<leader>ec`: Open mini file browser to current working directory
 
 ## Links
 

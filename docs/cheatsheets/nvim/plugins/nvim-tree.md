@@ -3,8 +3,7 @@
 ## File explorer
 
 - `<leader>ee`: Toggle file explorer
-- `<leader>ef`: Toggle file explorer on current file
-- `<leader>ec`: Collapse file explorer
+- `<leader>ew`: Collapse file explorer
 - `<leader>er`: Refresh file explorer
 
 ## Links
