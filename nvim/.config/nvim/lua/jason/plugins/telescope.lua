@@ -50,14 +50,17 @@ return {
     telescope.load_extension("fzf")
     telescope.load_extension("harpoon")
     telescope.load_extension("ui-select")
-    -- telescope.load_extension("file_browser")
   end,
   keys = {
     { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Fuzzy find files in cwd" },
     { "<leader>fr", "<cmd>Telescope oldfiles<cr>", desc = "Fuzzy find recent files" },
     { "<leader>fs", "<cmd>Telescope live_grep<cr>", desc = "Find string in cwd" },
     { "<leader>fg", "<cmd>Telescope grep_string<cr>", desc = "Find string under cursor in cwd" },
-    { "<leader>fo", "<cmd>Telescope buffers<cr>", desc = "Fuzzy find buffers" },
+    {
+      "<leader>fb",
+      "<cmd>Telescope buffers sort=mru sort_lastused=true theme=ivy<cr>",
+      desc = "Fuzzy find buffers",
+    },
     { "<leader>fH", "<cmd>Telescope help_tags<cr>", desc = "Fuzzy find help tags" },
     { "<leader>fc", "<cmd>Telescope current_buffer_fuzzy_find<cr>", desc = "Fuzzy find in current buffer" },
     { "<leader>fm", "<cmd>Telescope marks<cr>", desc = "Fuzzy find marks" },

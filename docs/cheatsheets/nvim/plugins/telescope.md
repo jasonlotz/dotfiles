@@ -6,7 +6,7 @@
 - `<leader>fr`: Fuzzy find recent files
 - `<leader>fs`: Find string in cwd using grep syntax
 - `<leader>fg`: Find (grep) string under cursor in cwd
-- `<leader>fo`: Fuzzy find open buffers
+- `<leader>fb`: Fuzzy find open buffers
 - `<leader>fH`: Fuzzy find help tags
 - `<leader>fc`: Fuzzy find current buffer
 - `<leader>fm`: Fuzzy find marks
