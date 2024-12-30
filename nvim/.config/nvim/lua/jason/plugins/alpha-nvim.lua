@@ -21,12 +21,12 @@ return {
     -- Set menu
     dashboard.section.buttons.val = {
       dashboard.button("e", "  > New File", "<cmd>ene<cr>"),
-      dashboard.button("SPC ee", "  > Toggle file explorer", "<cmd>NvimTreeToggle<cr>"),
-      dashboard.button("SPC ff", "󰱼 > Find File", "<cmd>Telescope find_files<cr>"),
-      dashboard.button("SPC fr", "  > Recent Files", "<cmd>Telescope oldfiles<cr>"),
-      dashboard.button("SPC fs", "  > Find Word", "<cmd>Telescope live_grep<cr>"),
-      dashboard.button("SPC wr", "󰁯  > Restore Session For Current Directory", "<cmd>SessionRestore<cr>"),
-      dashboard.button("q", " > Quit NVIM", "<cmd>qa<cr>"),
+      dashboard.button("<space>ee", "  > Toggle file explorer", "<cmd>NvimTreeToggle<cr>"),
+      dashboard.button("<space>ff", "󰱼 > Find File", "<cmd>Telescope find_files<cr>"),
+      dashboard.button("<space>fr", "  > Recent Files", "<cmd>Telescope oldfiles<cr>"),
+      dashboard.button("<space>fs", "  > Find Word", "<cmd>Telescope live_grep<cr>"),
+      dashboard.button("<space>wr", "󰁯  > Restore Session For Current Dir", "<cmd>SessionRestore<cr>"),
+      dashboard.button("q", " > Quit neovim", "<cmd>qa<cr>"),
     }
 
     -- Send config to alpha
