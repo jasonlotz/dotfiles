@@ -6,7 +6,6 @@ return {
     { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
     "nvim-tree/nvim-web-devicons",
     "nvim-telescope/telescope-ui-select.nvim",
-    "nvim-telescope/telescope-file-browser.nvim",
   },
   config = function()
     local telescope = require("telescope")
@@ -14,7 +13,6 @@ return {
 
     telescope.setup({
       pickers = {
-        file_browser = { theme = "ivy" },
         live_grep = {
           file_ignore_patterns = { "node_modules/", ".git/", ".venv/", ".obsidian/" },
           additional_args = function(_)
@@ -51,7 +49,7 @@ return {
     telescope.load_extension("fzf")
     telescope.load_extension("harpoon")
     telescope.load_extension("ui-select")
-    telescope.load_extension("file_browser")
+    -- telescope.load_extension("file_browser")
   end,
   keys = {
     { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Fuzzy find files in cwd" },
@@ -66,8 +64,5 @@ return {
     { "<leader>fq", "<cmd>Telescope quickfix<cr>", desc = "Fuzzy find quickfix" },
     { "<leader>fQ", "<cmd>Telescope quickfixhistory<cr>", desc = "Fuzzy find quickfix history" },
     { "<leader>fR", "<cmd>Telescope registers<cr>", desc = "Fuzzy find registers" },
-    { "<leader>fb", "<cmd>Telescope file_browser<cr>", desc = "Telescope file browser" },
-    { "<leader>fB", "<cmd>Telescope file_browser files=false<cr>", desc = "Telescope folder browser" },
-    hidden = true,
   },
 }

@@ -15,11 +15,6 @@
 - `<leader>fQ`: Fuzzy find quickfix history
 - `<leader>fR`: Fuzzy find registers
 
-## File browser
-
-- `<leader>fb`: Telescope file browser
-- `<leader>fB`: Telescope file browser (folders only)
-
 ## Quickfix
 
 - `<ctrl> + l`: Add search results to quickfix list
