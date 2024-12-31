@@ -22,11 +22,11 @@ return {
     dashboard.section.buttons.val = {
       dashboard.button("e", "  > New File", "<cmd>ene<cr>"),
       dashboard.button("<space>ee", "  > Toggle file explorer", "<cmd>NvimTreeToggle<cr>"),
-      dashboard.button("<space>ff", "󰱼 > Find File", "<cmd>Telescope find_files<cr>"),
+      dashboard.button("<space>ff", "󰱼  > Find File", "<cmd>Telescope find_files<cr>"),
       dashboard.button("<space>fr", "  > Recent Files", "<cmd>Telescope oldfiles<cr>"),
       dashboard.button("<space>fs", "  > Find Word", "<cmd>Telescope live_grep<cr>"),
       dashboard.button("<space>wr", "󰁯  > Restore Session For Current Dir", "<cmd>SessionRestore<cr>"),
-      dashboard.button("q", " > Quit neovim", "<cmd>qa<cr>"),
+      dashboard.button("q", "  > Quit neovim", "<cmd>qa<cr>"),
     }
 
     -- Send config to alpha
