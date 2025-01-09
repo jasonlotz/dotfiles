@@ -139,4 +139,11 @@ alias gitpullall='find . -type d -depth 1 -exec git --git-dir={}/.git --work-tre
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-export PATH="/opt/homebrew/anaconda3/bin:$PATH"
+# Python & Anaconda
+export PATH="/usr/local/opt/python/libexec/bin:/opt/homebrew/anaconda3/bin:$PATH"
+
+# Kubernetes
+source <(kubectl completion zsh)
+complete -F __start_kubectl k
+alias k=kubectl
+alias kn="kubectl config set-context --current --namespace"
