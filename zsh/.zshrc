@@ -147,3 +147,4 @@ source <(kubectl completion zsh)
 complete -F __start_kubectl k
 alias k=kubectl
 alias kn="kubectl config set-context --current --namespace"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
