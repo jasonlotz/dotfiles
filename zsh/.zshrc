@@ -140,7 +140,10 @@ alias gitpullall='find . -type d -depth 1 -exec git --git-dir={}/.git --work-tre
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Python & Anaconda
-export PATH="/usr/local/opt/python/libexec/bin:/opt/homebrew/anaconda3/bin:$PATH"
+alias python=/opt/homebrew/bin/python3
+alias pip=/opt/homebrew/bin/pip3
+
+export PATH="/opt/homebrew/bin:/opt/homebrew/anaconda3/bin:$PATH"
 
 # Kubernetes
 source <(kubectl completion zsh)
