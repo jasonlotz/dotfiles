@@ -142,7 +142,6 @@ alias gitpullall='find . -type d -depth 1 -exec git --git-dir={}/.git --work-tre
 # Python & Anaconda
 alias python=/opt/homebrew/bin/python3
 alias pip=/opt/homebrew/bin/pip3
-
 export PATH="/opt/homebrew/bin:/opt/homebrew/anaconda3/bin:$PATH"
 
 # Kubernetes
@@ -151,3 +150,6 @@ complete -F __start_kubectl k
 alias k=kubectl
 alias kn="kubectl config set-context --current --namespace"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+# Path
+export PATH="${HOME}/.local/bin:$PATH"
