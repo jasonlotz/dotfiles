@@ -10,6 +10,7 @@ return {
     },
     rename = { enabled = true },
     lazygit = { enabled = true },
+    explorer = { enabled = true, replace_netrw = true },
     picker = {
       enabled = true,
       matcher = { frecency = true },
