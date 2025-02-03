@@ -8,6 +8,7 @@ return {
       enabled = true,
       timeout = 3000,
     },
+    rename = { enabled = true },
     lazygit = { enabled = true },
     picker = {
       enabled = true,
@@ -26,12 +27,22 @@ return {
   keys = {
     -- lazygit
     { "<leader>gg", function() Snacks.lazygit() end, desc = "Lazygit", },
-    -- picker: explorer 
-    { "<leader>ee", function() Snacks.picker.explorer({hidden=true}) end, desc = "File Explorer" },
+    -- explorer 
+    { "<leader>ee", function() Snacks.explorer({hidden=true}) end, desc = "File Explorer" },
     -- picker: fuzzy find
     { "<leader><space>", function() Snacks.picker.smart() end, desc = "Smart Find Files" },
     { "<leader>ff", function() Snacks.picker.files({hidden = true}) end, desc = "Find Files" },
-    { "<leader>fb", function() Snacks.picker.buffers() end, desc = "Buffers" },
+    { "<leader>fb",
+      -- Start in normal mode to make it easy to "dd" to close a buffer
+      function()
+        Snacks.picker.buffers({
+          on_show = function()
+            vim.cmd.stopinsert()
+          end,
+        })
+      end,
+      desc = "Buffers"
+    },
     { "<leader>fc", function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "Find Config File" },
     { "<leader>fg", function() Snacks.picker.git_files() end, desc = "Find Git Files" },
     { "<leader>fp", function() Snacks.picker.projects() end, desc = "Projects" },
