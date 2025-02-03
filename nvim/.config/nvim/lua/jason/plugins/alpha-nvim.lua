@@ -28,7 +28,7 @@ return {
       ),
       dashboard.button("<space>ff", "󰱼  > Find File", "<cmd>lua Snacks.picker.files({hidden=true})<cr>"),
       dashboard.button("<space>fr", "  > Recent Files", "<cmd>lua Snacks.picker.recent()<cr>"),
-      dashboard.button("<space>fs", "  > Find Word", "<cmd>lua Snacks.picker.grep()<cr>"),
+      dashboard.button("<space>fg", "  > Find Word", "<cmd>lua Snacks.picker.grep()<cr>"),
       dashboard.button("<space>wr", "󰁯  > Restore Session For Current Dir", "<cmd>SessionRestore<cr>"),
       dashboard.button("q", "  > Quit neovim", "<cmd>qa<cr>"),
     }

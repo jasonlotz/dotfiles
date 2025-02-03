@@ -15,10 +15,14 @@
 - `<leader><space>`: Smart Find Files
 - `<leader>ff`: Find Files
 - `<leader>fb`: Buffers
+- `<leader>fB`: Grep Open Buffers
 - `<leader>fc`: Find Config File
 - `<leader>fg`: Find Git Files
 - `<leader>fp`: Projects
 - `<leader>fr`: Recent
+- `<leader>fl`: Buffer Lines
+- `<leader>fg`: Grep
+- `<leader>fw`: Visual selection or word
 - `<leader>fn`: Notification History
 
 ### Git
@@ -28,13 +32,6 @@
 - `<leader>gs`: Git Status
 - `<leader>gd`: Git Diff (Hunks)
 - `<leader>gf`: Git Log File
-
-### Grep
-
-- `<leader>sb`: Buffer Lines
-- `<leader>sB`: Grep Open Buffers
-- `<leader>sg`: Grep
-- `<leader>sw`: Visual selection or word
 
 ### Search
 
