@@ -1,8 +1,74 @@
 # snacks
 
-## LazyGit integration
+## LazyGit
 
 - `<leader>gg`: Open LazyGit
+
+## Picker
+
+### Explorer
+
+- `<leader>ee`: File Explorer
+
+### Fuzzy Find
+
+- `<leader><space>`: Smart Find Files
+- `<leader>ff`: Find Files
+- `<leader>fb`: Buffers
+- `<leader>fc`: Find Config File
+- `<leader>fg`: Find Git Files
+- `<leader>fp`: Projects
+- `<leader>fr`: Recent
+- `<leader>fn`: Notification History
+
+### Git
+
+- `<leader>gl`: Git Log
+- `<leader>gL`: Git Log Line
+- `<leader>gs`: Git Status
+- `<leader>gd`: Git Diff (Hunks)
+- `<leader>gf`: Git Log File
+
+### Grep
+
+- `<leader>sb`: Buffer Lines
+- `<leader>sB`: Grep Open Buffers
+- `<leader>sg`: Grep
+- `<leader>sw`: Visual selection or word
+
+### Search
+
+- `<leader>s"`: Registers
+- `<leader>s/`: Search History
+- `<leader>sa`: Autocmds
+- `<leader>sb`: Buffer Lines
+- `<leader>sc` or `<leader>:`: Command History
+- `<leader>sC`: Commands
+- `<leader>sd`: Diagnostics
+- `<leader>sd`: Buffer Diagnostics
+- `<leader>sh`: Help Pages
+- `<leader>sH`: Highlights
+- `<leader>si`: Icons
+- `<leader>sj`: Jumps
+- `<leader>sk`: Keymaps
+- `<leader>sl`: Location List
+- `<leader>sm`: Marks
+- `<leader>sM`: Man Pages
+- `<leader>sp`: Search for Plugin Spec
+- `<leader>sq`: Quickfix List
+- `<leader>sR`: Resume
+- `<leader>su`: Undo History
+- `<leader>uC`: Colorschemes
+
+### LSP
+
+- `gd`: Goto Definition
+- `gD`: Goto Declaration
+- `gr`: References
+- `gI`: Goto Implementation
+- `gy`: Goto Type Definition
+- `<leader>ss`: LSP Symbols
+- `<leader>sS`: LSP Workspace Symbols
 
 ## Links
 

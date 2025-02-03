@@ -2,8 +2,8 @@
 
 ## TODO, FIXME, etc. comment management
 
-- `<leader>xt`: Open Todo's in Trouble
-- `<leader>ft`: Open Todo's in Telescope
+- `<leader>xt`: Show Todo's in Trouble
+- `<leader>st`: Show Todo's in picker
 
 ## Links
 

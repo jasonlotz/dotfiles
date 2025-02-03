@@ -17,6 +17,5 @@ return {
     { "<leader>4", function() require("harpoon"):list():select(4) end, desc = "Harpoon to file 4", },
     { "<leader>5", function() require("harpoon"):list():select(5) end, desc = "Harpoon to file 5", },
     { "<leader>h", function() local Harpoon = require("harpoon") Harpoon.ui:toggle_quick_menu(Harpoon:list()) end, desc = "Harpoon: quick menu", },
-    { "<leader>fh", "<cmd>Telescope harpoon marks theme=ivy<cr>", desc = "Fuzzy find harpoon marks" },
   },
 }
