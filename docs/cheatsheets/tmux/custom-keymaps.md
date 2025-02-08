@@ -25,8 +25,12 @@
 ## Copy/paste
 
 - `<prefix>[`: Enter copy mode
-- `<prefix>v`: Start selecting text
+
+### In copy mode
+
+- `v` or `<space>`: Start selecting text
 - `y`: Copy text
+- `<enter>`: Leave copy mode
 
 ## Plugin management
 
