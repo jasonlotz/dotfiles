@@ -7,6 +7,10 @@ local keymap = vim.keymap -- for conciseness
 keymap.set("i", "jk", "<esc>", { desc = "Exit insert mode with jk" })
 keymap.set("v", "jk", "<esc>", { desc = "Exit insert mode with jk" })
 
+-- j and k move visual line in wrap mode
+vim.keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true })
+vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true })
+
 -- clear search highlights
 keymap.set("n", "<leader>uh", ":nohl<cr>", { desc = "Clear search highlights" })
 
