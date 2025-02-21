@@ -14,6 +14,12 @@ return {
     picker = {
       enabled = true,
       matcher = { frecency = true },
+      sources = {
+        files = { hidden = true },
+        explorer = { hidden = true },
+        grep = { hidden = true },
+        grep_word = { hidden = true },
+      },
       win = {
         input = {
           keys = {
@@ -29,10 +35,10 @@ return {
     -- lazygit
     { "<leader>gg", function() Snacks.lazygit() end, desc = "Lazygit", },
     -- explorer 
-    { "<leader>ee", function() Snacks.explorer({hidden=true}) end, desc = "File Explorer" },
+    { "<leader>ee", function() Snacks.explorer() end, desc = "File Explorer" },
     -- picker: fuzzy find & grep
     { "<leader><space>", function() Snacks.picker.smart() end, desc = "Smart Find Files" },
-    { "<leader>ff", function() Snacks.picker.files({hidden = true}) end, desc = "Find Files" },
+    { "<leader>ff", function() Snacks.picker.files() end, desc = "Find Files" },
     { "<leader>fb",
       -- Start in normal mode to make it easy to "dd" to close a buffer
       function()
