@@ -10,13 +10,16 @@ return {
     },
     rename = { enabled = true },
     lazygit = { enabled = true },
-    explorer = { enabled = true, replace_netrw = true },
+    explorer = {
+      enabled = true,
+      replace_netrw = true,
+    },
     picker = {
       enabled = true,
       matcher = { frecency = true },
       sources = {
         files = { hidden = true },
-        explorer = { hidden = true },
+        explorer = { hidden = true, layout = { cycle = false } },
         grep = { hidden = true },
         grep_word = { hidden = true },
       },
