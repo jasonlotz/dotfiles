@@ -50,6 +50,16 @@
 - `{count}u`: Undo
 - `{count}<ctrl> + r`: Redo
 
+## Basic multi-line editing
+
+Steps:
+
+1. `<ctrl > + v`: Visual block mode
+2. Move cursor to select the block
+3. `I` or `A`: Insert at the start or end of the block
+4. Type the text to insert
+5. `<esc>` or `jk` : Apply the change to all lines in the block
+
 ## Miscellaneous
 
 - `{count}~`: Change case
