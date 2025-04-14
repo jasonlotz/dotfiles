@@ -31,10 +31,14 @@ return {
       keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts) -- show diagnostics for line
 
       opts.desc = "Go to previous diagnostic"
-      keymap.set("n", "[d", vim.diagnostic.goto_prev, opts) -- jump to previous diagnostic in buffer
+      keymap.set("n", "[d", function()
+        vim.diagnostic.jump({ count = -1, float = true })
+      end, opts) -- jump to previous diagnostic in buffer
 
       opts.desc = "Go to next diagnostic"
-      keymap.set("n", "]d", vim.diagnostic.goto_next, opts) -- jump to next diagnostic in buffer
+      keymap.set("n", "]d", function()
+        vim.diagnostic.jump({ count = 1, float = true })
+      end, opts) -- jump to next diagnostic in buffer
 
       opts.desc = "Show documentation for what is under cursor"
       keymap.set("n", "gh", vim.lsp.buf.hover, opts) -- show documentation for what is under cursor
@@ -65,11 +69,13 @@ return {
       virtual_text = {
         prefix = "■ ", -- Could be '●', '▎', 'x', '■', , 
       },
-      float = { border = border },
+      float = border,
     })
 
     -- used to enable autocompletion (assign to every lsp server config)
-    local capabilities = blink_cmp_lsp.get_lsp_capabilities()
+    local capabilities = vim.lsp.protocol.make_client_capabilities()
+    capabilities.textDocument.completion.completionItem.snippetSupport = true
+    capabilities = vim.tbl_deep_extend("force", capabilities, blink_cmp_lsp.get_lsp_capabilities())
 
     -- Change the Diagnostic symbols in the sign column (gutter)
     local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
@@ -124,6 +130,13 @@ return {
     -- configure emmet language server
     lspconfig["emmet_ls"].setup({
       -- handlers = handlers,
+      init_options = {
+        html = {
+          options = {
+            ["bem.enabled"] = true,
+          },
+        },
+      },
       capabilities = capabilities,
       on_attach = on_attach,
       filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less" },
@@ -164,7 +177,7 @@ return {
       },
     })
 
-    -- configure terraform server
+    -- configure eslint server
     lspconfig["eslint"].setup({
       -- handlers = handlers,
       capabilities = capabilities,
