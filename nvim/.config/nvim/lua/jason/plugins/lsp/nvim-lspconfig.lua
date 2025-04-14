@@ -164,6 +164,13 @@ return {
       },
     })
 
+    -- configure terraform server
+    lspconfig["eslint"].setup({
+      -- handlers = handlers,
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
     -- configure lua server (with special settings)
     lspconfig["lua_ls"].setup({
       -- handlers = handlers,

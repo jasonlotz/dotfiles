@@ -42,6 +42,7 @@ return {
         "jdtls",
         "gopls",
         "terraformls",
+        "eslint",
       },
       -- auto-install configured servers (with lspconfig)
       automatic_installation = true, -- not the same as ensure_installed
@@ -53,7 +54,6 @@ return {
         "stylua", -- lua formatter
         "isort", -- python formatter
         "black", -- python formatter
-        "eslint_d", -- js linter
         "luacheck", -- lua linter
       },
     })
