@@ -78,11 +78,20 @@ return {
     capabilities = vim.tbl_deep_extend("force", capabilities, blink_cmp_lsp.get_lsp_capabilities())
 
     -- Change the Diagnostic symbols in the sign column (gutter)
-    local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
-    for type, icon in pairs(signs) do
-      local hl = "DiagnosticSign" .. type
-      vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
-    end
+    vim.diagnostic.config({
+      virtual_text = true,
+      underline = {
+        severity = { min = vim.diagnostic.severity.WARN },
+      },
+      signs = {
+        text = {
+          [vim.diagnostic.severity.HINT] = "",
+          [vim.diagnostic.severity.ERROR] = "✘",
+          [vim.diagnostic.severity.INFO] = "◉",
+          [vim.diagnostic.severity.WARN] = "",
+        },
+      },
+    })
 
     -- configure html server
     lspconfig["html"].setup({
