@@ -5,7 +5,6 @@ local keymap = vim.keymap -- for conciseness
 
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<esc>", { desc = "Exit insert mode with jk" })
-keymap.set("v", "jk", "<esc>", { desc = "Exit insert mode with jk" })
 
 -- j and k move visual line in wrap mode
 vim.keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true })
