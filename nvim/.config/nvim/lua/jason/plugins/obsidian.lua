@@ -7,7 +7,14 @@ return {
     "nvim-lua/plenary.nvim",
   },
   opts = {
-    -- disable_frontmatter = true,
+    disable_frontmatter = true,
+    completion = {
+      nvim_cmp = false,
+      blink = true,
+    },
+    picker = {
+      name = "snacks.pick",
+    },
     workspaces = {
       {
         name = "obsidian-vault",
