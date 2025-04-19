@@ -7,5 +7,10 @@ return {
     bullet = {
       right_pad = 1,
     },
+    render_modes = {
+      "n",
+      "c",
+      "t",
+    },
   },
 }
