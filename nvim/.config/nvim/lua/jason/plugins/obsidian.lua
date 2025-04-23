@@ -32,6 +32,12 @@ return {
       date_format = "%Y-%m-%d",
       time_format = "%H:%M",
     },
+    ui = {
+      checkboxes = {
+        [" "] = { char = "󰄱", hl_group = "ObsidianTodo" },
+        ["x"] = { char = "", hl_group = "ObsidianDone" },
+      },
+    },
     follow_url_func = function(url)
       -- Open the URL in the default web browser.
       vim.fn.jobstart({ "open", url }) -- Mac OS
