@@ -10,7 +10,7 @@
 ## Manage surrounds
 
 - `ds{surround}`: Delete surround
-- `cs{from:surround}{to:surround}`: Change surround
+- `cs{from:surround}{to:surround}`: Change surround (including HTML tags!)
 - `ys{motion}{surround}`: Add surround to {motion} selection
 - `yss{surround}`: Add surround to current line, ignoring leading and trailing whitespace
 - `yS{motion}{surround}`: Add surround to {motion} selection with surround characters on newlines
