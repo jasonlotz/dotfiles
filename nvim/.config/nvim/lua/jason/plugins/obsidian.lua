@@ -7,6 +7,7 @@ return {
     "nvim-lua/plenary.nvim",
   },
   opts = {
+    legacy_commands = false, -- Remove when 4.0 is released
     disable_frontmatter = true,
     completion = {
       nvim_cmp = false,
@@ -32,11 +33,14 @@ return {
       date_format = "%Y-%m-%d",
       time_format = "%H:%M",
     },
-    ui = {
-      checkboxes = {
-        [" "] = { char = "󰄱", hl_group = "ObsidianTodo" },
-        ["x"] = { char = "", hl_group = "ObsidianDone" },
-      },
+    checkbox = {
+      order = { " ", "x" },
+      -- This is the default configuration, you can change it to suit your needs.
+      -- The characters used for checkboxes can be customized.
+      char = "󰄱", -- Unicode character for unchecked checkbox
+      checked_char = "", -- Unicode character for checked checkbox
+      hl_group = "ObsidianTodo", -- Highlight group for unchecked checkbox
+      checked_hl_group = "ObsidianDone", -- Highlight group for checked checkbox
     },
     follow_url_func = function(url)
       -- Open the URL in the default web browser.
@@ -45,9 +49,9 @@ return {
   },
   -- stylua: ignore
   keys = {
-    {"<leader>ot", "<cmd>ObsidianToday<cr>", desc = "Obsidian: today note"},
-    {"<leader>oy", "<cmd>ObsidianYesterday<cr>", desc = "Obsidian: yesterday note"},
-    {"<leader>ob", "<cmd>ObsidianBacklinks<cr>", desc = "Obsidian: backlinks"},
-    {"<leader>o#", "<cmd>ObsidianTags<cr>", desc = "Obsidian: tags"}
+    {"<leader>ot", "<cmd>Obsidian today<cr>", desc = "Obsidian: today note"},
+    {"<leader>oy", "<cmd>Obsidian yesterday<cr>", desc = "Obsidian: yesterday note"},
+    {"<leader>ob", "<cmd>Obsidian backlinks<cr>", desc = "Obsidian: backlinks"},
+    {"<leader>o#", "<cmd>Obsidian tags<cr>", desc = "Obsidian: tags"}
   },
 }
