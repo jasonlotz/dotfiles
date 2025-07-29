@@ -35,12 +35,6 @@ return {
     },
     checkbox = {
       order = { " ", "x" },
-      -- This is the default configuration, you can change it to suit your needs.
-      -- The characters used for checkboxes can be customized.
-      char = "󰄱", -- Unicode character for unchecked checkbox
-      checked_char = "", -- Unicode character for checked checkbox
-      hl_group = "ObsidianTodo", -- Highlight group for unchecked checkbox
-      checked_hl_group = "ObsidianDone", -- Highlight group for checked checkbox
     },
     follow_url_func = function(url)
       -- Open the URL in the default web browser.
