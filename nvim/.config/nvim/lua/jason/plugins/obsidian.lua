@@ -46,6 +46,8 @@ return {
     {"<leader>ot", "<cmd>Obsidian today<cr>", desc = "Obsidian: today note"},
     {"<leader>oy", "<cmd>Obsidian yesterday<cr>", desc = "Obsidian: yesterday note"},
     {"<leader>ob", "<cmd>Obsidian backlinks<cr>", desc = "Obsidian: backlinks"},
-    {"<leader>o#", "<cmd>Obsidian tags<cr>", desc = "Obsidian: tags"}
+    {"<leader>o#", "<cmd>Obsidian tags<cr>", desc = "Obsidian: tags"},
+    {"<leader>oo", "<cmd>Obsidian open<cr>", desc = "Obsidian: open"},
+    {"<leader>ol", "<cmd>Obsidian follow_link<cr>", desc = "Obsidian: follow link"}
   },
 }
