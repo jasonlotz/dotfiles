@@ -18,7 +18,7 @@ return {
       enabled = true,
       matcher = { frecency = true },
       sources = {
-        files = { hidden = true },
+        files = { hidden = true, exclude = { ".obsidian" } },
         explorer = { hidden = true, layout = { cycle = false } },
         grep = { hidden = true },
         grep_word = { hidden = true },
