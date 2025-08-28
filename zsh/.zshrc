@@ -112,12 +112,6 @@ if [[ -f ~/.fzf.zsh ]]; then
   source ~/.fzf.zsh
 fi
 
-# butterfish
-export ZDOTDIR="$HOME"
-alias bf="butterfish"
-alias bfs="butterfish shell"
-alias bfp="butterfish prompt"
-
 # tmux
 alias tm="tmux attach || tmux new"
 bindkey -s ^f "tmux-sessionizer\n"
