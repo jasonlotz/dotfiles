@@ -136,7 +136,7 @@ alias gitpullall='find . -type d -depth 1 -exec git --git-dir={}/.git --work-tre
 # Python & Anaconda
 alias python=/opt/homebrew/bin/python3
 alias pip=/opt/homebrew/bin/pip3
-export PATH="/opt/homebrew/bin:/opt/homebrew/anaconda3/bin:$PATH"
+# export PATH="/opt/homebrew/bin:/opt/homebrew/anaconda3/bin:$PATH"  # commented out by conda initialize
 
 # Kubernetes
 source <(kubectl completion zsh)
@@ -148,3 +148,19 @@ export KUBE_EDITOR="nvim"
 
 # Path
 export PATH="${HOME}/.local/bin:$PATH"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/homebrew/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/homebrew/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/homebrew/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
