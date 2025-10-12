@@ -7,46 +7,48 @@ return {
     { "folke/neodev.nvim", config = true },
   },
   config = function()
-    -- import lspconfig plugin
-    local lspconfig = require("lspconfig")
-
     -- import blink capabilities
     local blink_cmp_lsp = require("blink.cmp")
 
     local keymap = vim.keymap -- for conciseness
 
-    local opts = { noremap = true, silent = true }
-    local on_attach = function(_, bufnr)
-      opts.buffer = bufnr
+    vim.api.nvim_create_autocmd("LspAttach", {
+      group = vim.api.nvim_create_augroup("UserLspConfig", {}),
+      callback = function(ev)
+        -- Buffer local mappings.
+        -- See `:help vim.lsp.*` for documentation on any of the below functions
+        local opts = { buffer = ev.buf, silent = true }
 
-      -- set keybinds
-      -- See snacks.lua for more keybinds
-      opts.desc = "See available code actions"
-      keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts) -- see available code actions, in visual mode will apply to selection
+        -- set keybinds
+        -- See snacks.lua for more keybinds
+        opts.desc = "See available code actions"
+        keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts) -- see available code actions, in visual mode will apply to selection
 
-      opts.desc = "Smart rename"
-      keymap.set("n", "<leader>cr", vim.lsp.buf.rename, opts) -- smart rename
+        opts.desc = "Smart rename"
+        keymap.set("n", "<leader>cr", vim.lsp.buf.rename, opts) -- smart rename
 
-      opts.desc = "Show line diagnostics"
-      keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts) -- show diagnostics for line
+        opts.desc = "Show line diagnostics"
+        keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts) -- show diagnostics for line
 
-      opts.desc = "Go to previous diagnostic"
-      keymap.set("n", "[d", function()
-        vim.diagnostic.jump({ count = -1, float = true })
-      end, opts) -- jump to previous diagnostic in buffer
+        opts.desc = "Go to previous diagnostic"
+        keymap.set("n", "[d", function()
+          vim.diagnostic.jump({ count = -1, float = true })
+        end, opts) -- jump to previous diagnostic in buffer
 
-      opts.desc = "Go to next diagnostic"
-      keymap.set("n", "]d", function()
-        vim.diagnostic.jump({ count = 1, float = true })
-      end, opts) -- jump to next diagnostic in buffer
+        opts.desc = "Go to next diagnostic"
+        keymap.set("n", "]d", function()
+          vim.diagnostic.jump({ count = 1, float = true })
+        end, opts) -- jump to next diagnostic in buffer
 
-      opts.desc = "Show documentation for what is under cursor"
-      keymap.set("n", "gh", vim.lsp.buf.hover, opts) -- show documentation for what is under cursor
+        opts.desc = "Show documentation for what is under cursor"
+        keymap.set("n", "gh", vim.lsp.buf.hover, opts) -- show documentation for what is under cursor
 
-      opts.desc = "Restart LSP"
-      keymap.set("n", "<leader>cR", ":LspRestart<cr>", opts) -- mapping to restart lsp if necessary
-    end
+        opts.desc = "Restart LSP"
+        keymap.set("n", "<leader>cR", ":LspRestart<cr>", opts) -- mapping to restart lsp if necessary
+      end,
+    })
 
+    -- Add border to the diagnostic popup window
     local border = {
       { "┌", "FloatBorder" },
       { "─", "FloatBorder" },
@@ -58,14 +60,18 @@ return {
       { "│", "FloatBorder" },
     }
 
-    -- Already configured by Noice.  Uncomment if you want to use it (as well as the handlers assignment in each lspconfig below).
-    -- Add the border on hover and on signature help popup window
-    -- local handlers = {
-    --   ["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = border }),
-    --   ["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = border }),
-
-    -- Add border to the diagnostic popup window
     vim.diagnostic.config({
+      underline = {
+        severity = { min = vim.diagnostic.severity.WARN },
+      },
+      signs = {
+        text = {
+          [vim.diagnostic.severity.ERROR] = " ",
+          [vim.diagnostic.severity.WARN] = " ",
+          [vim.diagnostic.severity.HINT] = "󰠠 ",
+          [vim.diagnostic.severity.INFO] = " ",
+        },
+      },
       virtual_text = {
         prefix = "■ ", -- Could be '●', '▎', 'x', '■', , 
       },
@@ -77,68 +83,17 @@ return {
     capabilities.textDocument.completion.completionItem.snippetSupport = true
     capabilities = vim.tbl_deep_extend("force", capabilities, blink_cmp_lsp.get_lsp_capabilities())
 
-    -- Change the Diagnostic symbols in the sign column (gutter)
-    vim.diagnostic.config({
-      virtual_text = true,
-      underline = {
-        severity = { min = vim.diagnostic.severity.WARN },
-      },
-      signs = {
-        text = {
-          [vim.diagnostic.severity.HINT] = "",
-          [vim.diagnostic.severity.ERROR] = "✘",
-          [vim.diagnostic.severity.INFO] = "◉",
-          [vim.diagnostic.severity.WARN] = "",
-        },
-      },
-    })
-
-    -- configure html server
-    lspconfig["html"].setup({
-      -- handlers = handlers,
+    vim.lsp.config("*", {
       capabilities = capabilities,
-      on_attach = on_attach,
-    })
-
-    -- configure typescript server with plugin
-    lspconfig["ts_ls"].setup({
-      -- handlers = handlers,
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
-
-    -- configure css server
-    lspconfig["cssls"].setup({
-      -- handlers = handlers,
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
-
-    -- configure tailwindcss server
-    lspconfig["tailwindcss"].setup({
-      -- handlers = handlers,
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
-
-    -- configure prisma orm server
-    lspconfig["prismals"].setup({
-      -- handlers = handlers,
-      capabilities = capabilities,
-      on_attach = on_attach,
     })
 
     -- configure graphql language server
-    lspconfig["graphql"].setup({
-      -- handlers = handlers,
-      capabilities = capabilities,
-      on_attach = on_attach,
+    vim.lsp.config("graphql", {
       filetypes = { "graphql", "gql", "typescriptreact", "javascriptreact" },
     })
 
     -- configure emmet language server
-    lspconfig["emmet_ls"].setup({
-      -- handlers = handlers,
+    vim.lsp.config("emmet_ls", {
       init_options = {
         html = {
           options = {
@@ -146,39 +101,15 @@ return {
           },
         },
       },
-      capabilities = capabilities,
-      on_attach = on_attach,
       filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less" },
     })
 
-    -- configure python server
-    lspconfig["pyright"].setup({
-      -- handlers = handlers,
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
-
-    -- configure jdtls (java) server
-    lspconfig["jdtls"].setup({
-      -- handlers = handlers,
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
-
-    -- configure terraform server
-    lspconfig["terraformls"].setup({
-      -- handlers = handlers,
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
-
-    lspconfig["gopls"].setup({
-      -- handlers = handlers,
-      capabilities = capabilities,
-      on_attach = on_attach,
+    vim.lsp.config("gopls", {
       cmd = { "gopls" },
       filetypes = { "go", "gomod", "gowork", "gotmpl" },
-      root_dir = lspconfig.util.root_pattern("go.work", "go.mod", ".git"),
+      root_dir = function(fname)
+        return vim.fs.root(fname, { "go.work", "go.mod", ".git" })
+      end,
       settings = {
         gopls = {
           usePlaceholders = true,
@@ -186,18 +117,8 @@ return {
       },
     })
 
-    -- configure eslint server
-    lspconfig["eslint"].setup({
-      -- handlers = handlers,
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
-
     -- configure lua server (with special settings)
-    lspconfig["lua_ls"].setup({
-      -- handlers = handlers,
-      capabilities = capabilities,
-      on_attach = on_attach,
+    vim.lsp.config("lua_ls", {
       settings = { -- custom settings for lua
         Lua = {
           -- make the language server recognize "vim" global
