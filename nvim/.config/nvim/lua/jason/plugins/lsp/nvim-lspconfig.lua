@@ -3,7 +3,6 @@ return {
   event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     "saghen/blink.cmp",
-    { "antosha417/nvim-lsp-file-operations", config = true },
     { "folke/neodev.nvim", config = true },
   },
   config = function()
@@ -87,11 +86,6 @@ return {
       capabilities = capabilities,
     })
 
-    -- configure graphql language server
-    vim.lsp.config("graphql", {
-      filetypes = { "graphql", "gql", "typescriptreact", "javascriptreact" },
-    })
-
     -- configure emmet language server
     vim.lsp.config("emmet_ls", {
       init_options = {
@@ -105,11 +99,6 @@ return {
     })
 
     vim.lsp.config("gopls", {
-      cmd = { "gopls" },
-      filetypes = { "go", "gomod", "gowork", "gotmpl" },
-      root_dir = function(fname)
-        return vim.fs.root(fname, { "go.work", "go.mod", ".git" })
-      end,
       settings = {
         gopls = {
           usePlaceholders = true,
@@ -125,12 +114,8 @@ return {
           diagnostics = {
             globals = { "vim" },
           },
-          workspace = {
-            -- make language server aware of runtime files
-            library = {
-              [vim.fn.expand("$VIMRUNTIME/lua")] = true,
-              [vim.fn.stdpath("config") .. "/lua"] = true,
-            },
+          completion = {
+            callSnippet = "Replace",
           },
         },
       },
