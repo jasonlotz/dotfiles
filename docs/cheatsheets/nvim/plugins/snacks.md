@@ -42,7 +42,7 @@
 - `<leader>sc` or `<leader>:`: Command History
 - `<leader>sC`: Commands
 - `<leader>sd`: Diagnostics
-- `<leader>sd`: Buffer Diagnostics
+- `<leader>sD`: Buffer Diagnostics
 - `<leader>sh`: Help Pages
 - `<leader>sH`: Highlights
 - `<leader>si`: Icons
