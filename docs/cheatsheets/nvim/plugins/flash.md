@@ -28,7 +28,7 @@
 
 ## Toggle Flash Search (while in search mode)
 
-- `<ctrl> + s`: Toggle Flash Search
+- `<ctrl> + f`: Toggle Flash Search
 
 ## Links
 
