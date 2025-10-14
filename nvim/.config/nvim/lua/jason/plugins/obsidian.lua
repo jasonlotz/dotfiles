@@ -8,7 +8,9 @@ return {
   },
   opts = {
     legacy_commands = false, -- Remove when 4.0 is released
-    disable_frontmatter = true,
+    frontmatter = {
+      enabled = true,
+    },
     completion = {
       nvim_cmp = false,
       blink = true,
