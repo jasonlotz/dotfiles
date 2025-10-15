@@ -47,40 +47,20 @@ return {
       end,
     })
 
-    -- Add border to the diagnostic popup window
-    local border = {
-      { "┌", "FloatBorder" },
-      { "─", "FloatBorder" },
-      { "┐", "FloatBorder" },
-      { "│", "FloatBorder" },
-      { "┘", "FloatBorder" },
-      { "─", "FloatBorder" },
-      { "└", "FloatBorder" },
-      { "│", "FloatBorder" },
-    }
-
     vim.diagnostic.config({
       underline = {
         severity = { min = vim.diagnostic.severity.WARN },
       },
       signs = {
-        text = {
-          [vim.diagnostic.severity.ERROR] = " ",
-          [vim.diagnostic.severity.WARN] = " ",
-          [vim.diagnostic.severity.HINT] = "󰠠 ",
-          [vim.diagnostic.severity.INFO] = " ",
-        },
+        text = { "", "", "󰠠", "" },
       },
-      virtual_text = {
-        prefix = "■ ", -- Could be '●', '▎', 'x', '■', , 
+      virtual_text = true,
+      float = {
+        border = "rounded",
       },
-      float = border,
     })
 
-    -- used to enable autocompletion (assign to every lsp server config)
-    local capabilities = vim.lsp.protocol.make_client_capabilities()
-    capabilities.textDocument.completion.completionItem.snippetSupport = true
-    capabilities = vim.tbl_deep_extend("force", capabilities, blink_cmp_lsp.get_lsp_capabilities())
+    local capabilities = blink_cmp_lsp.get_lsp_capabilities()
 
     vim.lsp.config("*", {
       capabilities = capabilities,
