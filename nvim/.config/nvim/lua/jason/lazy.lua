@@ -11,17 +11,14 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup(
-  { { import = "jason.plugins" }, { import = "jason.plugins.lsp" }, { import = "jason.plugins.colorschemes" } },
-  {
-    checker = {
-      enabled = true,
-      notify = false,
-    },
-    change_detection = {
-      notify = false,
-    },
-  }
-)
+require("lazy").setup({ { import = "jason.plugins" } }, {
+  checker = {
+    enabled = true,
+    notify = false,
+  },
+  change_detection = {
+    notify = false,
+  },
+})
 
 vim.keymap.set("n", "<leader>ll", "<cmd>Lazy<cr>", { desc = "Lazy Plug-in Manager" })
