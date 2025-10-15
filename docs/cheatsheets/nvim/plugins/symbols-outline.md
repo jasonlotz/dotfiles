@@ -1,4 +1,4 @@
-# symbols-outline
+# Aerial
 
 ## Show/hide symbols outline
 
@@ -6,4 +6,4 @@
 
 ## Links
 
-- https://github.com/simrat39/symbols-outline.nvim
+- https://github.com/stevearc/aerial.nvim
