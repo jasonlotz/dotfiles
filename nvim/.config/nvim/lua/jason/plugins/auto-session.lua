@@ -6,7 +6,7 @@ return {
     auto_session_suppress_dirs = { "~/", "~/Dev/", "~/Downloads", "~/Documents", "~/Desktop/" },
   },
   keys = {
-    { "<leader>wr", "<cmd>SessionRestore<cr>", desc = "Restore session for cwd" }, -- restore last workspace session for current directory
-    { "<leader>ws", "<cmd>SessionSave<cr>", desc = "Save session for cwd" }, -- save last workspace session for current directory
+    { "<leader>wr", "<cmd>AutoSession restore<cr>", desc = "Restore session for cwd" }, -- restore last workspace session for current directory
+    { "<leader>ws", "<cmd>AutoSession save<cr>", desc = "Save session for cwd" }, -- save last workspace session for current directory
   },
 }
