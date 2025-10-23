@@ -6,10 +6,6 @@
 
 ## Picker
 
-### Explorer
-
-- `<leader>ee`: File Explorer
-
 ### Fuzzy Find
 
 - `<leader><space>`: Smart Find Files

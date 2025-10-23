@@ -10,16 +10,11 @@ return {
     },
     rename = { enabled = true },
     lazygit = { enabled = true },
-    explorer = {
-      enabled = true,
-      replace_netrw = true,
-    },
     picker = {
       enabled = true,
       matcher = { frecency = true },
       sources = {
         files = { hidden = true, ignored = true, exclude = { ".obsidian" } },
-        explorer = { hidden = true, ignored = true, layout = { cycle = false } },
         grep = { hidden = true },
         grep_word = { hidden = true },
       },
@@ -37,8 +32,6 @@ return {
   keys = {
     -- lazygit
     { "<leader>gg", function() Snacks.lazygit() end, desc = "Lazygit", },
-    -- explorer 
-    { "<leader>ee", function() Snacks.explorer() end, desc = "File Explorer" },
     -- picker: fuzzy find & grep
     { "<leader><space>", function() Snacks.picker.smart() end, desc = "Smart Find Files" },
     { "<leader>ff", function() Snacks.picker.files() end, desc = "Find Files" },
