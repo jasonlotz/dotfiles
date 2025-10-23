@@ -4,11 +4,9 @@ return {
   dependencies = {
     "saghen/blink.cmp",
     { "folke/neodev.nvim", config = true },
+    { "antosha417/nvim-lsp-file-operations", dependencies = { "nvim-tree/nvim-tree.lua" }, config = true },
   },
   config = function()
-    -- import blink capabilities
-    local blink_cmp_lsp = require("blink.cmp")
-
     local keymap = vim.keymap -- for conciseness
 
     vim.api.nvim_create_autocmd("LspAttach", {
@@ -65,13 +63,18 @@ return {
       },
     })
 
-    local capabilities = blink_cmp_lsp.get_lsp_capabilities()
+    -- add additional capabilities supported by blink and lsp-file-operations
+    local capabilities = vim.tbl_deep_extend(
+      "force",
+      require("blink.cmp").get_lsp_capabilities(),
+      require("lsp-file-operations").default_capabilities()
+    )
 
     vim.lsp.config("*", {
       capabilities = capabilities,
     })
 
-    -- configure emmet language server
+    -- emmet
     vim.lsp.config("emmet_ls", {
       init_options = {
         html = {
@@ -83,6 +86,7 @@ return {
       filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less" },
     })
 
+    -- gopls
     vim.lsp.config("gopls", {
       settings = {
         gopls = {
@@ -91,7 +95,7 @@ return {
       },
     })
 
-    -- configure lua server (with special settings)
+    -- lua
     vim.lsp.config("lua_ls", {
       settings = { -- custom settings for lua
         Lua = {
