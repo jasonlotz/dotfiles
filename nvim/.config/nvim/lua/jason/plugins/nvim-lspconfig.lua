@@ -95,6 +95,22 @@ return {
       },
     })
 
+    -- TODO: eslint and typescript server have duplicate diagnostics.  This code fixes it, but it might be making eslint less effective so I'm leaving it commented out for now.
+    -- eslint
+    -- vim.lsp.config("eslint", {
+    --   settings = {
+    --     eslint = {
+    --       -- Only provide code actions, not diagnostics to avoid duplicates
+    --       format = false,
+    --       validate = false,
+    --     },
+    --   },
+    --   on_attach = function(client, bufnr)
+    --     -- Disable diagnostic capabilities from eslint to avoid duplicates with typescript language server
+    --     client.server_capabilities.diagnosticProvider = false
+    --   end,
+    -- })
+
     -- lua
     vim.lsp.config("lua_ls", {
       settings = { -- custom settings for lua
