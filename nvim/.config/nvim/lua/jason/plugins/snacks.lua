@@ -28,6 +28,9 @@ return {
         },
       },
     },
+    scratch = {
+      enabled = true,
+    },
   },
   -- stylua: ignore start 
   keys = {
@@ -92,6 +95,9 @@ return {
     { "gy", function() Snacks.picker.lsp_type_definitions() end, desc = "Goto T[y]pe Definition" },
     { "<leader>ss", function() Snacks.picker.lsp_symbols() end, desc = "LSP Symbols" },
     { "<leader>sS", function() Snacks.picker.lsp_workspace_symbols() end, desc = "LSP Workspace Symbols" },
+    -- scratch
+    { "<leader>.", function() Snacks.scratch() end, desc = "Toggle Scratch Buffer" },
+    { "<leader>S", function() Snacks.scratch.select() end, desc = "Select Scratch Buffer" }
   },
   -- stylua: ignore end
 }

@@ -63,6 +63,11 @@
 - `<leader>ss`: LSP Symbols
 - `<leader>sS`: LSP Workspace Symbols
 
+### Scratch
+
+- `<leader>.`: Open Scratch Buffer
+- `<leader>S`: Select Scratch Buffer
+
 ## Links
 
 - https://github.com/folke/snacks.nvim
