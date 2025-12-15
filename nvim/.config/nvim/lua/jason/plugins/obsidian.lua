@@ -9,7 +9,7 @@ return {
   opts = {
     legacy_commands = false, -- Remove when 4.0 is released
     frontmatter = {
-      enabled = true,
+      enabled = false,
     },
     completion = {
       nvim_cmp = false,
@@ -47,9 +47,6 @@ return {
       img_name_func = function()
         return string.format("%s-", os.time())
       end,
-    },
-    ui = {
-      enable = false,
     },
   },
   -- stylua: ignore
