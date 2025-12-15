@@ -42,6 +42,15 @@ return {
       -- Open the URL in the default web browser.
       vim.fn.jobstart({ "open", url }) -- Mac OS
     end,
+    attachments = {
+      img_folder = "$assets/attachments",
+      img_name_func = function()
+        return string.format("%s-", os.time())
+      end,
+    },
+    ui = {
+      enable = false,
+    },
   },
   -- stylua: ignore
   keys = {
@@ -50,6 +59,7 @@ return {
     {"<leader>ob", "<cmd>Obsidian backlinks<cr>", desc = "Obsidian: backlinks"},
     {"<leader>o#", "<cmd>Obsidian tags<cr>", desc = "Obsidian: tags"},
     {"<leader>oo", "<cmd>Obsidian open<cr>", desc = "Obsidian: open"},
-    {"<leader>ol", "<cmd>Obsidian follow_link<cr>", desc = "Obsidian: follow link"}
+    {"<leader>ol", "<cmd>Obsidian follow_link<cr>", desc = "Obsidian: follow link"},
+    {"<leader>op", "<cmd>Obsidian paste_img<cr>", desc = "Obsidian: paste image"}
   },
 }
