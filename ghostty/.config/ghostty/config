@@ -9,5 +9,5 @@ copy-on-select = clipboard
 window-padding-balance = true
 window-save-state = always
 macos-titlebar-style = transparent
-background-opacity = 0.75
-background-blur = 50
+background-opacity = 0.85
+background-blur = 50 
