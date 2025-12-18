@@ -1,8 +1,6 @@
 return {
   "sphamba/smear-cursor.nvim",
   opts = {
-    cursor_color = "#00ff00",
-
     -- Fire hazard mode
     -- cursor_color = "#ff4000",
     -- particles_enabled = true,

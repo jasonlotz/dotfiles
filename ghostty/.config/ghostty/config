@@ -1,4 +1,4 @@
-theme = "Midnight in Mojave"
+theme = "Adwaita Dark"
 font-family = "MenloLGS NF Regular"
 font-size = 14 
 window-decoration = auto
@@ -10,4 +10,4 @@ window-padding-balance = true
 window-save-state = always
 macos-titlebar-style = transparent
 background-opacity = 0.85
-background-blur = 50 
+background-blur = 50  
