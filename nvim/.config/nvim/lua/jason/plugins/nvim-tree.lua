@@ -13,7 +13,10 @@ return {
         width = 35,
         relativenumber = true,
       },
-      -- change folder arrow icons
+      update_focused_file = {
+        enable = true,
+        update_root = false,
+      }, -- change folder arrow icons
       renderer = {
         indent_markers = {
           enable = true,
