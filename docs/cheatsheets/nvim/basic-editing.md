@@ -50,6 +50,15 @@
 - `{count}u`: Undo
 - `{count}<ctrl> + r`: Redo
 
+## Change case
+
+- `guu`: Lowercase line
+- `gUU`: Uppercase line
+- `g~~`: Toggle case of line
+- `gu{count}{motion}`: Lowercase text that is moved over with motion
+- `gU{count}{motion}`: Uppercase text that is moved over with motion
+- `g~{count}{motion}`: Toggle case of text that is moved over with motion
+
 ## Basic multi-line editing
 
 Steps:
