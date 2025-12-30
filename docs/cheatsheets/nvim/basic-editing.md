@@ -1,9 +1,9 @@
-# Editing
+# Basic Editing
 
-## Visual mode
+## Basic mode
 
-- `v{motion}`: Visual mode (enter & exit)
-- `V{motion}`: Visual line mode
+- `v{motion}`: Basic mode (enter & exit)
+- `V{motion}`: Basic line mode
 - `o`: Exchange cursor position with start/end of highlighting
 
 ## Insert
@@ -63,7 +63,7 @@
 
 Steps:
 
-1. `<ctrl > + v`: Visual block mode
+1. `<ctrl > + v`: Basic block mode
 2. Move cursor to select the block
 3. `I` or `A`: Insert at the start or end of the block
 4. Type the text to insert

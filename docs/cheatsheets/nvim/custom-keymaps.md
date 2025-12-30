@@ -1,4 +1,4 @@
-# Custom keymaps
+# Custom Keymaps
 
 ## General
 

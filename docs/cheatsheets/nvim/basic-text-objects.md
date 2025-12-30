@@ -1,4 +1,4 @@
-# Text objects
+# Basic Text objects
 
 ## Visual/copy/delete/change mode selections
 
@@ -16,13 +16,3 @@
 - `{operator}ap`: Select outer paragraph
 - `{operator}iB`: Select inner {} block
 - `{operator}aB`: Select outer {} block
-
-## One-liners
-
-- `yy`: Copy line
-- `dd`: Delete line
-- `cc`: Change line
-
-## Search patterns
-
-- `dgn`: Delete the next search pattern match

@@ -24,3 +24,12 @@ Notes:
 
 - For both search and replace, if in visual mode, use `:` to enter command mode and use the same commands as above.
 - Use up and down arrow keys to navigate through the search history.
+
+## Interactive search and replace
+
+After searching using `/pattern` or `?pattern`, you can use the following commands to interact with the search results:
+
+- `cgn`: Change the next search pattern match
+- `dgn`: Delete the next search pattern match
+
+Don't forget that you can use `.` to repeat the last change made with `cgn` or `dgn`.

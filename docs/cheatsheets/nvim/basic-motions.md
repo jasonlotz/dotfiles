@@ -1,4 +1,4 @@
-# Motions
+# Basic Motions
 
 ## General
 
