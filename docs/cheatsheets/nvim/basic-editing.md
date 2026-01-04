@@ -73,7 +73,7 @@ Steps:
 
 This works with various number formats, including decimal, hex, octal, times, dates, and more. Also, this works in visual mode to increment/decrement all numbers in the selected text.
 
-- `<ctrl> + a`, `<ctrl> + x`: Increment, decrement number under cursor
+- `{count}<ctrl> + a`, `{count}<ctrl> + x`: Increment, decrement number under cursor by the {count} (default 1)
 
 For a numbered list, use:
 
