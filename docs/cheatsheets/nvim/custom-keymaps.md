@@ -1,41 +1,41 @@
-# Custom Keymaps
+# custom keymaps
 
-## General
+## general
 
-- `jk`: Exit insert mode
-- `uh`: Clear search highlights
+- `jk`: exit insert mode
+- `uh`: clear search highlights
 
-## Quick save
+## quick save
 
-- `<leader>w`: Quick save
-- `<leader>ww`: Quick save all
+- `<leader>w`: quick save
+- `<leader>ww`: quick save all
 
-## Increment/decrement numbers
+## increment/decrement numbers
 
-- `<leader>+`: Increment number
-- `<leader>-`: Decrement number
+- `<leader>+`: increment number
+- `<leader>-`: decrement number
 
-## Window management
+## window management
 
-- `<leader>sv`: Split window vertically
-- `<leader>sh`: Split window horizontally
-- `<leader>se`: Make splits equal size
-- `<leader>sx`: Close current split
+- `<leader>sv`: split window vertically
+- `<leader>sh`: split window horizontally
+- `<leader>se`: make splits equal size
+- `<leader>sx`: close current split
 
-## Tab management
+## tab management
 
-- `<leader>tt`: Open new tab
-- `<leader>to`: Close all but current tab
-- `<leader>tx`: Close current tab
-- `<leader>tn`: Go to next tab
-- `<leader>tp`: Go to previous tab
-- `<leader>tf`: Open current buffer in new tab
+- `<leader>tt`: open new tab
+- `<leader>to`: close all but current tab
+- `<leader>tx`: close current tab
+- `<leader>tn`: go to next tab
+- `<leader>tp`: go to previous tab
+- `<leader>tf`: open current buffer in new tab
 
-## Move lines (in visual mode)
+## move lines (in visual mode)
 
-- `<leader>J`: Move line(s) up
-- `<leader>K`: Move line(s) down
+- `<leader>j`: move line(s) up
+- `<leader>k`: move line(s) down
 
-## Search/replace
+## search/replace
 
-- `<leader>rw`: Replace word under cursor with entered word
+<leader>rw`: Replace word under cursor with entered word

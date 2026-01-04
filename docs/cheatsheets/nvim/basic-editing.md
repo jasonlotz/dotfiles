@@ -69,10 +69,19 @@ Steps:
 4. Type the text to insert
 5. `<esc>` or `jk` : Apply the change to all lines in the block
 
+## Numbers
+
+This works with various number formats, including decimal, hex, octal, times, dates, and more. Also, this works in visual mode to increment/decrement all numbers in the selected text.
+
+- `<ctrl> + a`, `<ctrl> + x`: Increment, decrement number under cursor
+
+For a numbered list, use:
+
+- `g<ctrl> + a`, `g<ctrl> + x`: Increment, decrement to next/previous number in sequence
+
 ## Miscellaneous
 
 - `{count}~`: Change case
-- `<ctrl> + a`, `<ctrl> + x`: Increment, decrement number under cursor
 - `{count}J`: Join N-1 lines
 - `>>`, `<<`: Indent, outdent
 
