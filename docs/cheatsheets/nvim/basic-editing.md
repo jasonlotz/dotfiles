@@ -45,10 +45,16 @@
 - `{count}P`: Paste contents of register at cursor (before)
 - `{count}p`: Paste contents of register at cursor (after)
 
-## Undo/redo
+## Undo/redo/time travel
 
 - `{count}u`: Undo
+- `U`: Undo all changes on a line
 - `{count}<ctrl> + r`: Redo
+
+- `:undolist`: Show undo history
+
+- `:earlier {when}`: Go to earlier state (when can be in seconds (s), minutes (m), hours (h), days (d))
+- `:later {when}`: Go to later state (when can be in seconds (s), minutes (m), hours (h), days (d))
 
 ## Change case
 
