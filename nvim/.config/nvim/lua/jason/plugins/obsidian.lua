@@ -38,12 +38,8 @@ return {
     checkbox = {
       order = { " ", "x" },
     },
-    follow_url_func = function(url)
-      -- Open the URL in the default web browser.
-      vim.fn.jobstart({ "open", url }) -- Mac OS
-    end,
     attachments = {
-      img_folder = "$assets/attachments",
+      folder = "$assets/attachments",
       img_name_func = function()
         return string.format("%s-", os.time())
       end,
