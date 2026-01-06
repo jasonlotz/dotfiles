@@ -49,7 +49,7 @@
 
 - `{count}u`: Undo
 - `U`: Undo all changes on a line
-- `{count}<ctrl> + r`: Redo
+- `<C-r>`: Redo
 
 - `:undolist`: Show undo history
 - `:earlier {when}`: Go to earlier state (when can be in number of changes (default), seconds (s), minutes (m), hours (h), days (d))
@@ -68,7 +68,7 @@
 
 Steps:
 
-1. `<ctrl > + v`: Basic block mode
+1. `<C-v>`: Basic block mode
 2. Move cursor to select the block
 3. `I` or `A`: Insert at the start or end of the block
 4. Type the text to insert
@@ -78,11 +78,11 @@ Steps:
 
 This works with various number formats, including decimal, hex, octal, times, dates, and more. Also, this works in visual mode to increment/decrement all numbers in the selected text.
 
-- `{count}<ctrl> + a`, `{count}<ctrl> + x`: Increment, decrement number under cursor by the {count} (default 1)
+- `<C-a>`, `<C-x>`: Increment, decrement number under cursor by the {count} (default 1)
 
 For a numbered list, use:
 
-- `g<ctrl> + a`, `g<ctrl> + x`: Increment, decrement to next/previous number in sequence
+- `g<C-a>`, `g<C-x>`: Increment, decrement to next/previous number in sequence
 
 ## Miscellaneous
 
@@ -92,6 +92,6 @@ For a numbered list, use:
 
 ## Insert mode
 
-- `<ctrl> + o`: Allow enter of a single command and then returns to insert mode
-- `<ctrl> + t`: Increase tab
-- `<ctrl> + d`: Decrease tab
+- `<C-o>`: Allow enter of a single command and then returns to insert mode
+- `<C-t>`: Increase tab
+- `<C-d>`: Decrease tab

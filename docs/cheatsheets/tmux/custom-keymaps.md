@@ -2,7 +2,7 @@
 
 ## Prefix
 
-- `<ctrl> + s`: Prefix
+- `<C-s>`: Prefix
 
 ## Switch sessions
 
@@ -47,7 +47,7 @@
 
 ## Tmux sessionizer
 
-- `<ctrl> + f`: Open tmux sessionizer
+- `<C-f>`: Open tmux sessionizer
 
 ## Links
 

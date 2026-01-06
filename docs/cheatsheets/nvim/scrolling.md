@@ -2,10 +2,10 @@
 
 ## Basic scrolling motions
 
-- `<ctrl> + d`: Scroll down half a page
-- `<ctrl> + u`: Scroll up half a page
-- `<ctrl> + e`: Scroll down one line
-- `<ctrl> + y`: Scroll up one line
+- `<C-d>`: Scroll down half a page
+- `<C-u>`: Scroll up half a page
+- `<C-e>`: Scroll down one line
+- `<C-y>`: Scroll up one line
 - `zz`: Center the cursor line in the window
 - `zt`: Scroll the window so that the cursor line is at the top
 - `zb`: Scroll the window so that the cursor line is at the bottom

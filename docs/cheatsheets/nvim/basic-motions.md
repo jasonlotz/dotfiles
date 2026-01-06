@@ -27,8 +27,8 @@
 - `gg`: Top of page
 - `G`: Bottom of page
 - `H`, `M`, `L`: Top, middle, bottom of screen
-- `<ctrl> + u`, `<ctrl> + d`: Half page up, down
-- `<ctrl> + f`, `<ctrl> + b`: Full page up, down
+- `<C-u>`, `<C-d>`: Half page up, down
+- `<C-f>`, `<C-b>`: Full page up, down
 - {linenum} + `gg` or `G`: Move to line #
 - `:` + {linenum}`: Move to line #
 - `N%`: Move to percent of file
