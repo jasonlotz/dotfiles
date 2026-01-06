@@ -2,39 +2,39 @@
 
 ## general
 
-- `jk`: exit insert mode
-- `uh`: clear search highlights
+- `jk`: Exit insert mode
+- `<leader>uh`: Clear search highlights
 
 ## quick save
 
-- `<leader>w`: quick save
-- `<leader>ww`: quick save all
+- `<leader>w`: Quick save
+- `<leader>ww`: Quick save all
 
 ## increment/decrement numbers
 
-- `<leader>+`: increment number
-- `<leader>-`: decrement number
+- `<leader>+`: Increment number
+- `<leader>-`: Decrement number
 
 ## window management
 
-- `<leader>sv`: split window vertically
-- `<leader>sh`: split window horizontally
-- `<leader>se`: make splits equal size
-- `<leader>sx`: close current split
+- `<leader>sv`: Split window vertically
+- `<leader>sh`: Split window horizontally
+- `<leader>se`: Make splits equal size
+- `<leader>sx`: Close current split
 
 ## tab management
 
-- `<leader>tt`: open new tab
-- `<leader>to`: close all but current tab
-- `<leader>tx`: close current tab
-- `<leader>tn`: go to next tab
-- `<leader>tp`: go to previous tab
-- `<leader>tf`: open current buffer in new tab
+- `<leader>tt`: Open new tab
+- `<leader>to`: Close all but current tab
+- `<leader>tx`: Close current tab
+- `<leader>tn`: Go to next tab
+- `<leader>tp`: Go to previous tab
+- `<leader>tf`: Open current buffer in new tab
 
 ## move lines (in visual mode)
 
-- `<leader>j`: move line(s) up
-- `<leader>k`: move line(s) down
+- `<leader>j`: Move line(s) up
+- `<leader>k`: Move line(s) down
 
 ## search/replace
 
