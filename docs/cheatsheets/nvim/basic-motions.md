@@ -2,21 +2,21 @@
 
 ## General
 
-- {count} + `h`, `l`, `k`, `j`: Left, Right, Up, Down
+- `{count}h`, `{count}l`, `{count}k`, `{count}j`: Left, Right, Up, Down
 
 ## Word
 
-- {count} + ` w`, `b`: Word (forward, backward)
-- {count} + `e`, `ge`: End of word (forward, backward)
-- {count} + ` W`, `B`: Space separated word (forward, backward)
-- {count} + `E`, `gE`: Space separated end of word (forward, backward)
-- {count} + `E`, `gE`: Space separated end of word (forward, backward)
+- `{count}w`, `{count}b`: Word (forward, backward)
+- `{count}e`, `{count}ge`: End of word (forward, backward)
+- `{count}W`, `{count}B`: Space separated word (forward, backward)
+- `{count}E`, `{count}gE`: Space separated end of word (forward, backward)
+- `{count}E`, `{count}gE`: Space separated end of word (forward, backward)
 
 ## Single-line
 
 - `0`: Start of line
 - `^` or `_`: First character of line
-- {count} + `$`: End of line
+- `{count}$`: End of line
 - `(`, `)`: Next sentence (backward, forward)
 - `{`, `}`: Next blank line (backward, forward)
 - `<enter>`: Beginning of next line
@@ -29,9 +29,9 @@
 - `H`, `M`, `L`: Top, middle, bottom of screen
 - `<C-u>`, `<C-d>`: Half page up, down
 - `<C-f>`, `<C-b>`: Full page up, down
-- {linenum} + `gg` or `G`: Move to line #
-- `:` + {linenum}`: Move to line #
-- `N%`: Move to percent of file
+- `{count}gg` or `{count}G`: Move to line #
+- `:{linenum}`: Move to line #
+- `{count}%`: Move to percent of file
 
 ## Move to character
 
@@ -44,7 +44,7 @@
 
 _For languages that use {} for scopes AND open { on its own line:_
 
-- {count} + `][`: Sections forward, at end of section
-- {count} + `[]`: Section backward, at end of section
-- {count} + `]]`: Sections forward, at start of section
-- {count} + `[[`: Sections backward, at start of section
+- `{count}][`: Sections forward, at end of section
+- `{count}[]`: Section backward, at end of section
+- `{count}]]`: Sections forward, at start of section
+- `{count}[[`: Sections backward, at start of section
