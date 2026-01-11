@@ -17,8 +17,7 @@ keymap.set("n", "<leader>uh", ":nohl<cr>", { desc = "Clear search highlights" })
 keymap.set("n", "x", '"_x')
 
 -- quick save
-keymap.set("n", "<leader>w", ":w<cr>", { desc = "Quick save" })
-keymap.set("n", "<leader>ww", ":wa<cr>", { desc = "Quick save all" })
+keymap.set("n", "<leader>w", ":w<cr>", { desc = "Save all" })
 
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<c-a>", { desc = "Increment number" }) -- increment

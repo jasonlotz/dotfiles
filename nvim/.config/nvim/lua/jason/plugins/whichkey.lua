@@ -25,7 +25,6 @@ return {
     { "<leader>s", desc = "Split" },
     { "<leader>t", desc = "Tab" },
     { "<leader>u", desc = "Dismiss / clear" },
-    { "<leader>w", desc = "Save" },
     { "<leader>x", desc = "Trouble" },
   },
 }
