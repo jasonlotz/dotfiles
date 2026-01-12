@@ -10,7 +10,6 @@
 - `{count}e`, `{count}ge`: End of word (forward, backward)
 - `{count}W`, `{count}B`: Space separated word (forward, backward)
 - `{count}E`, `{count}gE`: Space separated end of word (forward, backward)
-- `{count}E`, `{count}gE`: Space separated end of word (forward, backward)
 
 ## Single-line
 
