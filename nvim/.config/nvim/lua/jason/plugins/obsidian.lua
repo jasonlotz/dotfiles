@@ -53,6 +53,8 @@ return {
     {"<leader>o#", "<cmd>Obsidian tags<cr>", desc = "Obsidian: tags"},
     {"<leader>oo", "<cmd>Obsidian open<cr>", desc = "Obsidian: open"},
     {"<leader>ol", "<cmd>Obsidian follow_link<cr>", desc = "Obsidian: follow link"},
-    {"<leader>op", "<cmd>Obsidian paste_img<cr>", desc = "Obsidian: paste image"}
+    {"<leader>op", "<cmd>Obsidian paste_img<cr>", desc = "Obsidian: paste image"},
+    {"<leader>oc", "<cmd>Obsidian toc<cr>", desc = "Obsidian: table of contents"},
+    {"<leader>od", function() Obsidian.picker.grep_notes({ query = "- [ ]" }) end, desc = "Obsidian: unchecked checkboxes"},
   },
 }

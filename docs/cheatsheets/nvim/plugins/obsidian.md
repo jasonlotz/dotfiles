@@ -8,6 +8,8 @@
 - `<leader>o#`: Obsidian tags
 - `<leader>oo`: Open note in Obsidian app
 - `<leader>ol`: Follow link under cursor
+- `<leader>oc`: Table of contents for current note
+- `<leader>od`: Search for unchecked checkboxes (todos) in vault
 
 ## Images
 
