@@ -8,6 +8,9 @@ return {
   },
   opts = {
     legacy_commands = false, -- Remove when 4.0 is released
+    footer = {
+      enabled = false, -- I would like to keep the footer, but it's kind of glitchy so turning off for now
+    },
     frontmatter = {
       enabled = false,
     },
