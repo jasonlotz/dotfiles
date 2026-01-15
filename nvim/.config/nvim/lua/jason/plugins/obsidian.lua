@@ -42,7 +42,20 @@ return {
       order = { " ", "x" },
     },
     note_id_func = function(title)
-      return title:gsub("\\[\\^A-Za-z0-9-\\]", "")
+      local name = ""
+      -- Sanitize title to create a filename
+      if title ~= nil then
+        name = title:gsub("[^A-Za-z0-9-]", "")
+      end
+      -- Generate a random name if title is nil or results in an empty string
+      if #name == 0 then
+        local suffix = ""
+        for _ = 1, 4 do
+          suffix = suffix .. string.char(math.random(65, 90))
+        end
+        name = tostring(os.time()) .. "-" .. suffix
+      end
+      return name
     end,
     attachments = {
       folder = "$assets/attachments",
