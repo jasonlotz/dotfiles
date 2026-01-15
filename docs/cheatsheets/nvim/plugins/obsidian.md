@@ -13,6 +13,7 @@
 - `<leader>on`: Create a new note from a template
 - `<leader>ol`: Insert link on selected text
 - `<leader>or`: Rename current note (and automatically update backlinks)
+- `<leader>oe`: Extract contents and replace with link to new note
 
 ## Images
 

@@ -78,5 +78,6 @@ return {
     {"<leader>od", function() Obsidian.picker.grep_notes({ query = "- [ ]" }) end, desc = "Obsidian: unchecked checkboxes"},
     {"<leader>or", "<cmd>Obsidian rename<cr>", desc = "Obsidian: rename note"},
     {"<leader>ol", "<cmd>Obsidian link<cr>", desc = "Obsidian: insert link on selected text"},
+    {"<leader>oe", "<cmd>Obsidian extract_note<cr>", desc = "Obsidian: extract selected text to new note"},
   },
 }
