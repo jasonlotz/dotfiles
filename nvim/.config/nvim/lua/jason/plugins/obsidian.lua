@@ -41,6 +41,9 @@ return {
     checkbox = {
       order = { " ", "x" },
     },
+    note_id_func = function(title)
+      return title:gsub("\\[\\^A-Za-z0-9-\\]", "")
+    end,
     attachments = {
       folder = "$assets/attachments",
       img_name_func = function()
@@ -58,6 +61,7 @@ return {
     {"<leader>ol", "<cmd>Obsidian follow_link<cr>", desc = "Obsidian: follow link"},
     {"<leader>op", "<cmd>Obsidian paste_img<cr>", desc = "Obsidian: paste image"},
     {"<leader>oc", "<cmd>Obsidian toc<cr>", desc = "Obsidian: table of contents"},
+    {"<leader>on", "<cmd>Obsidian new_from_template<cr>", desc = "Obsidian: new from template"},
     {"<leader>od", function() Obsidian.picker.grep_notes({ query = "- [ ]" }) end, desc = "Obsidian: unchecked checkboxes"},
   },
 }
