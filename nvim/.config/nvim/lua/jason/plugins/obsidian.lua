@@ -45,7 +45,7 @@ return {
       local name = ""
       -- Sanitize title to create a filename
       if title ~= nil then
-        name = title:gsub("[^A-Za-z0-9-]", "")
+        name = title:gsub("[^ A-Za-z0-9-]", "")
       end
       -- Generate a random name if title is nil or results in an empty string
       if #name == 0 then
