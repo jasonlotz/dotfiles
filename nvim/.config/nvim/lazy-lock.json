@@ -25,7 +25,7 @@
   "noice.nvim": { "branch": "main", "commit": "7bfd942445fb63089b59f97ca487d605e715f155" },
   "nui.nvim": { "branch": "main", "commit": "de740991c12411b663994b2860f1a4fd0937c130" },
   "nvim-autopairs": { "branch": "master", "commit": "59bce2eef357189c3305e25bc6dd2d138c1683f5" },
-  "nvim-colorizer.lua": { "branch": "master", "commit": "81e676d3203c9eb6e4c0ccf1eba1679296ef923f" },
+  "nvim-colorizer.lua": { "branch": "master", "commit": "338409dd8a6ed74767bad3eb5269f1b903ffb3cf" },
   "nvim-dap": { "branch": "master", "commit": "e47878dcf1ccc30136b30d19ab19fe76946d61cd" },
   "nvim-dap-go": { "branch": "main", "commit": "b4421153ead5d726603b02743ea40cf26a51ed5f" },
   "nvim-dap-ui": { "branch": "master", "commit": "cf91d5e2d07c72903d052f5207511bf7ecdb7122" },
@@ -58,5 +58,5 @@
   "vim-tmux-navigator": { "branch": "master", "commit": "e41c431a0c7b7388ae7ba341f01a0d217eb3a432" },
   "vscode-js-debug": { "branch": "main", "commit": "74702375c67744e2f123d89ef950d7b6859c6f16" },
   "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" },
-  "wrapping.nvim": { "branch": "master", "commit": "929e0f4c1906bf093092c01681a72ee1071f427b" }
+  "wrapping.nvim": { "branch": "master", "commit": "7befb73499cac7337cbbdc68896a7f8add66e65e" }
 }
