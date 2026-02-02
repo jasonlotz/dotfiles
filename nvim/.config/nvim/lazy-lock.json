@@ -1,6 +1,6 @@
 {
   "Comment.nvim": { "branch": "master", "commit": "e30b7f2008e52442154b66f7c519bfd2f1e32acb" },
-  "CopilotChat.nvim": { "branch": "main", "commit": "07dcc188bc488b2dafa9324bd42088640bee3d19" },
+  "CopilotChat.nvim": { "branch": "main", "commit": "6933b82e0b6dac53274cd8bff8fcd986a2070d77" },
   "aerial.nvim": { "branch": "master", "commit": "7a6a42791eb2b54a7115c7db4488981f93471770" },
   "alpha-nvim": { "branch": "main", "commit": "3979b01cb05734331c7873049001d3f2bb8477f4" },
   "blink.cmp": { "branch": "main", "commit": "b19413d214068f316c78978b08264ed1c41830ec" },
@@ -58,5 +58,5 @@
   "vim-tmux-navigator": { "branch": "master", "commit": "e41c431a0c7b7388ae7ba341f01a0d217eb3a432" },
   "vscode-js-debug": { "branch": "main", "commit": "74702375c67744e2f123d89ef950d7b6859c6f16" },
   "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" },
-  "wrapping.nvim": { "branch": "master", "commit": "7befb73499cac7337cbbdc68896a7f8add66e65e" }
+  "wrapping.nvim": { "branch": "master", "commit": "d67a7c9d1c4673fa678a68f5da222e995b91f876" }
 }
