@@ -4,12 +4,13 @@
 
 - `<leader>od`: Obsidian daily (today) note
 - `<leader>oy`: Obsidian yesterday note
+- `<leader>ot`: Obsidian tomorrow note
 - `<leader>ob`: Obsidian backlinks
 - `<leader>o#`: Obsidian tags
 - `<leader>oo`: Open note in Obsidian app
 - `<leader>of`: Follow link under cursor
 - `<leader>oc`: Table of contents for current note
-- `<leader>ot`: Search for unchecked checkboxes (todos) in vault
+- `<leader>ou`: Search for unchecked checkboxes (todos) in vault
 - `<leader>on`: Create a new note
 - `<leader>oN`: Create a new note from a template
 - `<leader>ol`: Insert link on selected text

@@ -68,6 +68,7 @@ return {
   keys = {
     {"<leader>od", "<cmd>Obsidian today<cr>", desc = "Obsidian: daily note"},
     {"<leader>oy", "<cmd>Obsidian yesterday<cr>", desc = "Obsidian: yesterday note"},
+    {"<leader>ot", "<cmd>Obsidian tomorrow<cr>", desc = "Obsidian: tomorrow note"},
     {"<leader>ob", "<cmd>Obsidian backlinks<cr>", desc = "Obsidian: backlinks"},
     {"<leader>o#", "<cmd>Obsidian tags<cr>", desc = "Obsidian: tags"},
     {"<leader>oo", "<cmd>Obsidian open<cr>", desc = "Obsidian: open in Obsidian app"},
@@ -76,7 +77,7 @@ return {
     {"<leader>oc", "<cmd>Obsidian toc<cr>", desc = "Obsidian: table of contents"},
     {"<leader>on", "<cmd>Obsidian new<cr>", desc = "Obsidian: new"},
     {"<leader>oN", "<cmd>Obsidian new_from_template<cr>", desc = "Obsidian: new from template"},
-    {"<leader>ot", function() Obsidian.picker.grep_notes({ query = "- [ ]" }) end, desc = "Obsidian: unchecked checkboxes"},
+    {"<leader>ou", function() Obsidian.picker.grep_notes({ query = "- [ ]" }) end, desc = "Obsidian: unchecked checkboxes"},
     {"<leader>or", "<cmd>Obsidian rename<cr>", desc = "Obsidian: rename note"},
     {"<leader>ol", "<cmd>Obsidian link<cr>", desc = "Obsidian: insert link on selected text"},
     {"<leader>oe", "<cmd>Obsidian extract_note<cr>", desc = "Obsidian: extract selected text to new note"},
