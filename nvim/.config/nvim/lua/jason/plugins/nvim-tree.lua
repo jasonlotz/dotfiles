@@ -18,7 +18,6 @@ return {
         update_root = false,
       }, -- change folder arrow icons
       renderer = {
-        highlight_opened_files = "name",
         indent_markers = {
           enable = true,
         },
@@ -48,6 +47,9 @@ return {
         ignore = false,
       },
     })
+
+    -- highlight current file in nvim-tree with a distinct cursor line
+    vim.api.nvim_set_hl(0, "NvimTreeCursorLine", { bg = "#45475a", bold = true })
 
     -- set keymaps
     local keymap = vim.keymap
