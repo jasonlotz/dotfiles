@@ -57,8 +57,6 @@ return {
         -- Infrastructure
         "terraformls",
       },
-      -- auto-install configured servers (with lspconfig)
-      automatic_installation = true, -- auto install configured servers (with lspconfig)
     })
 
     -- ensure other tools (non-LSP servers) are installed

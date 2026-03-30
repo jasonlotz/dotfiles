@@ -3,7 +3,7 @@ return {
   event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     "saghen/blink.cmp",
-    { "folke/neodev.nvim", config = true },
+    { "folke/lazydev.nvim", ft = "lua", opts = {} },
     { "antosha417/nvim-lsp-file-operations", dependencies = { "nvim-tree/nvim-tree.lua" }, config = true },
   },
   config = function()
