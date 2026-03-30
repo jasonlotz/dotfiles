@@ -18,6 +18,7 @@ return {
         update_root = false,
       }, -- change folder arrow icons
       renderer = {
+        highlight_opened_files = "name",
         indent_markers = {
           enable = true,
         },
