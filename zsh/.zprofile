@@ -5,4 +5,4 @@ PATH="$PATH:/Users/jason/Dropbox/Scripts/"
 PATH="$PATH:/Applications/Ghostty.app/Contents/MacOS"
 
 # Obsidian
-export ovault=~"/Documents/obsidian-vault"
+export ovault=~"/Workspaces/obsidian-vault"
