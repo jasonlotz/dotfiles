@@ -33,7 +33,7 @@
 - `{operator}al`: Select outer part of a loop
 - `{operator}il`: Select inner part of a loop
 
-### Select function
+### Select function call
 
 - `{operator}af`: Select outer part of a function call
 - `{operator}if`: Select inner part of a function call
@@ -50,62 +50,59 @@
 
 ## Swaps
 
-### Swap Paramter/argument
+### Swap parameter/argument
 
 - `<leader>na`: Swap parameters/argument with next
 - `<leader>pa`: Swap parameters/argument with prev
 
-### Swap Object property
+### Swap object property
 
 - `<leader>n:`: Swap object property with next
 - `<leader>p:`: Swap object property with prev
 
-### Swap Function
+### Swap function
 
 - `<leader>nm`: Swap function with next
 - `<leader>pm`: Swap function with prev
 
 ## Navigate nodes
 
-### Navigation function call
+(`]` = next, `[` = prev — uppercase = end, lowercase = start)
 
-- `[f`: Next function call start
-- `[F`: Prev function call start
-- `]f`: Next function call end
-- `]F`: Prev function call end
+### Function call
 
-### Navigate method/function definition
+- `]f`: Next function call start
+- `]F`: Next function call end
+- `[f`: Prev function call start
+- `[F`: Prev function call end
 
-- `[m`: Next method/function def start
-- `[M`: Prev method/function def start
-- `]m`: Next method/function def end
-- `]M`: Prev method/function def end
+### Method/function definition
 
-### Navigate class
+- `]m`: Next method/function def start
+- `]M`: Next method/function def end
+- `[m`: Prev method/function def start
+- `[M`: Prev method/function def end
 
-- `[c`: Next class start
-- `[C`: Prev class start
-- `]c`: Next class end
-- `]C`: Prev class end
+### Class
 
-### Navigate conditional
+- `]c`: Next class start
+- `]C`: Next class end
+- `[c`: Prev class start
+- `[C`: Prev class end
 
-- `[i`: Next conditional start
-- `[I`: Prev conditional start
-- `]i`: Next conditional end
-- `]I`: Prev conditional end
+### Conditional
 
-### Navigate loop
+- `]i`: Next conditional start
+- `]I`: Next conditional end
+- `[i`: Prev conditional start
+- `[I`: Prev conditional end
 
-- `[l`: Next loop start
-- `[L`: Prev loop start
-- `]l`: Next loop end
-- `]L`: Prev loop end
+### Loop
 
-### Navigate scope/fold
-
-- `[s`: Next scope
-- `[z`: Next fold
+- `]l`: Next loop start
+- `]L`: Next loop end
+- `[l`: Prev loop start
+- `[L`: Prev loop end
 
 ## Repeats
 
