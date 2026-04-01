@@ -1,9 +1,7 @@
 return {
   {
     "CopilotC-Nvim/CopilotChat.nvim",
-    opts = {
-      debug = true,
-    },
+    opts = {},
     branch = "main",
     keys = {
       { "<leader>cc", ":CopilotChat ", mode = { "n", "x" }, desc = "CopilotChat: ask a question" },
