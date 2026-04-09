@@ -126,6 +126,9 @@ source /opt/homebrew/etc/bash_completion.d/az
 # java
 export JAVA_HOME="$(/usr/libexec/java_home)"
 
+# Go
+export PATH="$PATH:$HOME/go/bin"
+
 # git
 alias gitpullall='find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull \;'
 
@@ -163,4 +166,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
