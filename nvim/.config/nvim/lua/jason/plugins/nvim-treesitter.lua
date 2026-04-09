@@ -34,6 +34,14 @@ return {
         "terraform",
       })
 
+      -- enable treesitter highlighting for all installed parsers since nvim-treesitter
+      -- main branch no longer does this automatically unlike the legacy master branch
+      vim.api.nvim_create_autocmd("FileType", {
+        callback = function(ev)
+          pcall(vim.treesitter.start, ev.buf)
+        end,
+      })
+
       -- enable nvim-ts-context-commentstring plugin for commenting tsx and jsx
       require("ts_context_commentstring").setup({ enable_autocmd = false })
     end,
