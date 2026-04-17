@@ -35,3 +35,11 @@ tmux move-window -s <session>:<index> -t <target-session>:
 ```
 
 Or interactively: `Ctrl+s .` then type the target index.
+
+## Swap panes
+
+```sh
+tmux swap-pane -s <session>:<window>.<pane> -t <target-session>:<target-window>.<target-pane>
+```
+
+Or interactively: `Ctrl+s Ctrl+o`
