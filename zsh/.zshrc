@@ -166,3 +166,6 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+# Added by Antigravity
+export PATH="/Users/jason/.antigravity/antigravity/bin:$PATH"
