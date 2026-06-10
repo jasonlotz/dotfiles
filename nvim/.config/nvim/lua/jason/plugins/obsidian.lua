@@ -17,10 +17,6 @@ return {
     frontmatter = {
       enabled = false,
     },
-    completion = {
-      nvim_cmp = false,
-      blink = true,
-    },
     picker = {
       name = "snacks.pick",
     },
