@@ -10,4 +10,5 @@ window-padding-balance = true
 window-save-state = always
 macos-titlebar-style = transparent
 background-opacity = 0.85
-background-blur = 50  
+background-blur = 50
+working-directory = home
