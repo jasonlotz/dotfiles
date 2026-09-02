@@ -146,6 +146,7 @@ export KUBE_EDITOR="nvim"
 
 # Path
 export PATH="${HOME}/.local/bin:$PATH"
+export UV_PYTHON_PREFERENCE=only-managed  # never build venvs on brew/system python
 
 
 # Added by Antigravity
