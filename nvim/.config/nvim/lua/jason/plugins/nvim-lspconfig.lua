@@ -111,6 +111,24 @@ return {
     --   end,
     -- })
 
+    -- python: ruff (lint/format) + pyright (types) side by side.
+    -- Each owns one job so their diagnostics don't overlap.
+    vim.lsp.config("ruff", {
+      on_attach = function(client, _)
+        -- pyright has richer hover docs; let it own hover
+        client.server_capabilities.hoverProvider = false
+      end,
+    })
+
+    vim.lsp.config("pyright", {
+      settings = {
+        pyright = {
+          -- ruff organizes imports (conform runs ruff_organize_imports)
+          disableOrganizeImports = true,
+        },
+      },
+    })
+
     -- lua
     vim.lsp.config("lua_ls", {
       settings = {

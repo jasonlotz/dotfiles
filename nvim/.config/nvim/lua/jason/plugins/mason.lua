@@ -46,7 +46,8 @@ return {
         "lua_ls",
 
         -- Python
-        "pyright",
+        "pyright", -- type checking
+        "ruff", -- linting (F401 etc.) + formatting
 
         -- Java
         "jdtls",
@@ -64,8 +65,7 @@ return {
       ensure_installed = {
         "prettier", -- prettier formatter
         "stylua", -- lua formatter
-        "isort", -- python formatter
-        "black", -- python formatter
+        "ruff", -- python linter + formatter (replaces isort + black)
         "luacheck", -- lua linter
       },
     })

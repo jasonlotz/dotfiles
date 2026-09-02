@@ -17,7 +17,8 @@ return {
         yaml = { "prettier" },
         markdown = { "prettier" },
         lua = { "stylua" },
-        python = { "isort", "black" },
+        -- ruff replaces isort + black; organize imports first, then format
+        python = { "ruff_organize_imports", "ruff_format" },
       },
       format_on_save = {
         lsp_format = "fallback",
