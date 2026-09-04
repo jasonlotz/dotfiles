@@ -18,7 +18,7 @@ return {
       enabled = false,
     },
     picker = {
-      name = "snacks.pick",
+      name = "snacks.picker",
     },
     workspaces = {
       {
